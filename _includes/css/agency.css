@@ -266,13 +266,25 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(img/header-bg.jpg);
+    background-image: url(img/hdr_kathy.jpg);
+    
     background-position: center center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    /* 4/15/16 we: keep background on top ??? */
+    background-position: top center;
+    
+    //background-repeat: none;
+    /* 4/15/16 we: this works better */
+    background-repeat: no-repeat;
+    
+    //-webkit-background-size: cover;
+    //-moz-background-size: cover;
+    //background-size: cover;
+    //-o-background-size: cover;
+    /* 4/15/2016 we - background without clipping */
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain;
 }
 
 header .intro-text {
@@ -300,7 +312,8 @@ header .intro-text .intro-heading {
 @media(min-width:768px) {
     header .intro-text {
         padding-top: 300px;
-        padding-bottom: 200px;
+        padding-bottom: 550px;
+        
     }
 
     header .intro-text .intro-lead-in {
