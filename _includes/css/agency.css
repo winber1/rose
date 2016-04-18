@@ -263,7 +263,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 header {
-    text-align: center;
+  //  text-align: center;
     color: #fff;
     background-attachment: scroll;
     background-image: url(img/hdr_kathy.jpg);
@@ -283,7 +283,7 @@ header {
     /* 4/15/2016 we - background without clipping */
     -webkit-background-size: contain;
     -moz-background-size: contain;
-    background-size: contain;
+    background-size: cover;
     -o-background-size: contain;
 }
 
@@ -309,10 +309,18 @@ header .intro-text .intro-heading {
     line-height: 50px;
 }
 
+#tellMeMore
+{
+    position:relative;
+    top:25vw;
+    left:-100px;
+    
+}
+
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 300px;
-        padding-bottom: 550px;
+        padding-top: 0px;
+        padding-bottom: 30vw;
         
     }
 
