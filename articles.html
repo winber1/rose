@@ -1,0 +1,27 @@
+---
+layout: singlePage
+title: Articles
+---
+
+<section>    
+  <div class="container"> 
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+          <h1>{{ page.title}}</h1>
+          <hr>
+   
+           {% for post in site.posts %}
+                {% if post.category == 'article' %}
+             
+                {{ post.date | date: "%d %B %Y" }}
+                 <h3><a href="/rose{{ post.url }}">{{ post.title }}</a></h3>
+                 {{ post.excerpt }}
+             
+            <hr>
+                {% endif %}
+           {% endfor %}
+       
+      </div>
+    </div>
+  </div>
+</section>

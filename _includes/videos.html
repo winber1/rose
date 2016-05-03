@@ -8,7 +8,11 @@
                 </div>
             </div>
             <div class="row">
-            {% for post in site.posts %}
+                
+            {% for post in site.posts %}             
+                {% if post.layout != 'article' %}
+                {% capture counttwo %}{{ counttwo | plus: '1' }}{% endcapture %}
+                {% if counttwo <= '3' %}
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -23,7 +27,10 @@
                         <p class="text-muted">{{ post.subtitle }}</p>
                     </div>
                 </div>
+                {% endif %}{% endif %}
             {% endfor %}
-            </div>
+<h4>&nbsp;</h4> <h4 class="service-heading"><a href="/rose/videos/">more...</a></h4>
+            </div>           
         </div>
+            
     </section>

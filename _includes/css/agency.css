@@ -296,7 +296,7 @@ header {
     
     background-position: center center;
     /* 4/15/16 we: keep background on top ??? */
-    background-position: top center;
+    background-position: top right;
     
     //background-repeat: none;
     /* 4/15/16 we: this works better */
