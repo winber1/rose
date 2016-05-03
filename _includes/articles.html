@@ -4,22 +4,25 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Articles</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">My most recent articles...</h3>
                 </div>
             </div>
             <div class="row text-left">
-                <div class="col-md-12">            
-                    <h4 class="service-heading">Lorem</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                <div class="col-md-12">   
+                
+{% for post in site.posts %}
+    {% if post.layout == 'article' %}
+        {% capture counttwo %}{{ counttwo | plus: '1' }}{% endcapture %}
+        {% if counttwo <= '3' %}
+        <h4  class="service-heading"><a href="/rose{{ post.url }}">{{ post.title }}</a></h4>
+                <p class="text-muted">{{ post.excerpt }}</p><br>
+             
+           
+    {% endif %}{% endif %}
+{% endfor %}    <br>     
                     
-                    <h4 class="service-heading">ipsum</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    
-                    <h4 class="service-heading">dolor</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>             
-                    
-                </div>
-            </div>
+                
+            <h4 class="service-heading"><a href="/rose/articles/">more...</a></h4>
+            </div></div>
         </div>
     </section>
