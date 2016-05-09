@@ -13,9 +13,9 @@ title: Articles
            {% for post in site.posts %}
                 {% if post.category == 'article' %}
              
-                {{ post.date | date: "%d %B %Y" }}
+                {{ post.publish-date }}
                  <h3><a href="/rose{{ post.url }}">{{ post.title }}</a></h3>
-                 {{ post.excerpt }}
+                 {{ post.description }}<b><a href="/rose{{ post.url }}">&nbsp;&nbsp;more...</a></b>
              
             <hr>
                 {% endif %}
