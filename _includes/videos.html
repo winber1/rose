@@ -9,10 +9,9 @@
             </div>
             <div class="row">
                 
-            {% for post in site.posts %}             
-                {% if post.layout != 'article' %}
-                {% capture counttwo %}{{ counttwo | plus: '1' }}{% endcapture %}
-                {% if counttwo <= '3' %}
+            {% for post in site.posts %} 
+                {% if post.layout == 'homePage' %}
+                
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -20,16 +19,17 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
+                        <iframe width='374' height='250' src='http://www.youtube.com/embed/{{ post.YouTubeTag }}' frameborder='0' allowfullscreen></iframe>
                     </a>
                     <div class="portfolio-caption">
                         <h4>{{ post.title }}</h4>
                         <p class="text-muted">{{ post.subtitle }}</p>
                     </div>
                 </div>
-                {% endif %}{% endif %}
+                {% endif %}
             {% endfor %}
-<h4>&nbsp;</h4> <h4 class="service-heading"><a href="/rose/videos/">more...</a></h4>
+                <br style="clear:left">
+<h5>&nbsp;</h5> <h4 class="service-heading"><a href="/rose/videos/">more...</a></h4>
             </div>           
         </div>
             
