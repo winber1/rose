@@ -9,6 +9,7 @@ thumbnail: startup-framework-thumbnail.png
 alt: image-alt
 publish-date: Aug/Sept 2013
 client: Start Bootstrap
+type: article
 category: article
 description: There is an extremely sensitive and powerful zone in the zodiac located at the 0 degrees point of the four cardinal signs - a special area that relates to high public visibility. Actually, we could say that the Aries Point has an orb that starts at 29 degrees mutable and ends at 1 degree cardinal. Planets or angles at the Aries Point in our natal chart have the potential for high visibility in life. Sometimes this can suggest fame or notoriety. The AP indicates the presence of energy insistence that pushes a planet or angle into public view.
 

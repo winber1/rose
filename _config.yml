@@ -75,19 +75,36 @@ prose:
   siteurl: 'http://winber1.github.io/rose/'
   media: 'media'
   ignore:
-    - /_posts/articles
+    - _config.yml
+    - /_layouts
+    - /_includes
     metadata:
         _posts:
-            - name: "layout"
+            - name: "type"
                 field:
                     element: "hidden"
                     value: "blog"
             - name: "title"
                 field:
                     element: "text"
-                    type: "text"
+                    label: "Title"
+        _posts/homePage-videos:
+            - name: "title:"
+                field:
+                    element: "text"
+                    label: "Title"
             - name: "YouTubeTag"
                 field:
                     element: "text"
+                    label: "YouTube tag"
                     type: "text"
+        _posts/articles:
+            - name: "type"
+                field:
+                    element: "hidden"
+                    value: "article"
+            - name: "title"
+                field:
+                    element: "text"
+                    label: "Title"
                 

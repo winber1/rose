@@ -11,7 +11,7 @@ title: Articles
           <hr>
    
            {% for post in site.posts %}
-                {% if post.category == 'article' %}
+                {% if post.type == 'article' %}
              
                 {{ post.publish-date }}
                  <h3><a href="/rose{{ post.url }}">{{ post.title }}</a></h3>

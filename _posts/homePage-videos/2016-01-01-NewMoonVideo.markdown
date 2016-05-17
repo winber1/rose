@@ -5,6 +5,7 @@ layout: homePage
 modal-id: 4
 date: 2014-07-15
 img: treehouse.png
+type: homePage
 YouTubeTag: 40YkFpfF2Fk
 thumbnail: treehouse-thumbnail.png
 alt: image-alt
