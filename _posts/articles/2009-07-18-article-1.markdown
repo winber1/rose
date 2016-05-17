@@ -2,15 +2,10 @@
 title: Article 1
 subtitle: Website Design
 layout: article
-modal-id: 2
 date: 2009-07-17
-img: escape.png
-thumbnail: escape-thumbnail.png
-alt: image-alt
-publish-date: April 2014
-client: Start Bootstrap
 type: article
 category: article
+tags: none
 description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
 
 ---
