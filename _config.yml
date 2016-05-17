@@ -81,7 +81,7 @@ prose:
     - /_includes
   metadata:
     _posts:
-      - name: "layout"
+      - name: "type"
         field:
           element: "hidden"
           value: "blog"
@@ -96,12 +96,22 @@ prose:
             - name: "Bananas"
               value: "bananas"
     _posts/articles:
-      - name: "layout"
+      - name: "type"
         field:
           element: "hidden"
-          value: "page"
-      - name: "permalink"
+          value: "article"
+      - name: "title"
         field:
           element: "text"
-          label: "Permalink"
+          label: "Title"
+          value: ""
+    _posts/homePage-videos:
+      - name: "type"
+        field:
+          element: "hidden"
+          value: "homePage"
+      - name: "YouTubetag"
+        field:
+          element: "text"
+          label: "You Tube tag"
           value: ""
