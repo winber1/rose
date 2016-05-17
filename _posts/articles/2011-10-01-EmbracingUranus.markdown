@@ -2,15 +2,12 @@
 title: Embracing the Adventure of a Uranus Cycle
 subtitle: published in the Mountain Astrologer Magazine
 layout: article
-modal-id: 4
 date: 2011-10-01
-img: treehouse.png
-thumbnail: treehouse-thumbnail.png
-alt: image-alt
-publish-date: Oct/Nov 2011
-client: Start Bootstrap
+layout: article
+layout: article
 type: article
 category: article
+tags: none
 description: Have you ever experienced a small electric shock, giving you that sharp jolt of energy that causes you to jump? No doubt you have. You know how it energizes your senses and snaps your attention fully into the moment, so that you're completely aware and alert. That sudden, shocking surprise triggers a sensorial rush, while your adrenaline surges because of the zap coming out of the blue.
 
 ---
