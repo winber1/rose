@@ -113,6 +113,7 @@ prose:
       - name: "date"
         field:
           element: "text"
+          label: "Display Date"
           value: ""
       - name: "type"
         field:
@@ -121,10 +122,12 @@ prose:
       - name: "category"
         field:
           element: "text"
+          label: "Category"
           value: ""
       - name: "tags"
         field:
           element: "text"
+          label: "Tags"
           value: ""
     _posts/homePage-videos:
       - name: "type"
