@@ -96,14 +96,35 @@ prose:
             - name: "Bananas"
               value: "bananas"
     _posts/articles:
-      - name: "type"
-        field:
-          element: "hidden"
-          value: "article"
       - name: "title"
         field:
           element: "text"
           label: "Title"
+          value: ""
+      - name: "subtitle"
+        field:
+          element: "text"
+          label: "Subtitle"
+          value: ""
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "date"
+        field:
+          element: "text"
+          value: ""
+      - name: "type"
+        field:
+          element: "hidden"
+          value: "article"
+      - name: "category"
+        field:
+          element: "text"
+          value: ""
+      - name: "tags"
+        field:
+          element: "text"
           value: ""
     _posts/homePage-videos:
       - name: "type"
