@@ -1,12 +1,12 @@
 ---
-title: New Moon in Taurus 2016
-subtitle: Website Design
+title: New Moon in Gemini 2016
+subtitle: 
 layout: homePage
 modal-id: 4
 date: 2014-07-15
 img: treehouse.png
 type: homePage
-YouTubeTag: 40YkFpfF2Fk
+YouTubeTag: pLFAImM1iVs
 thumbnail: treehouse-thumbnail.png
 alt: image-alt
 project-date: April 2014

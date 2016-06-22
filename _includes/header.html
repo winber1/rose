@@ -24,6 +24,13 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+        
+{% if page.url == '/' %}
+{% assign path_name = "" %}
+{% else %}
+{% assign path_name = "/rose/" %}
+{% endif %}
+                    
                     {% if page.url != '/' %}
                     <li id="HomeId">
                         <a class="page-scroll" href="/rose/">Home</a>
@@ -34,19 +41,19 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#consultations">consultations</a>
+                        <a class="page-scroll" href="{{path_name}}#consultations">consultations</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#articles">articles</a>
+                        <a class="page-scroll" href="{{path_name}}#articles">articles</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#videos">videos</a>
+                        <a class="page-scroll" href="{{path_name}}#videos">videos</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">about</a>
+                        <a class="page-scroll" href="{{path_name}}#about">about</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">contact</a>
+                        <a class="page-scroll" href="{{path_name}}#contact">contact</a>
                     </li>
                 
                 </ul>
