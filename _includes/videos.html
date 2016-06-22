@@ -8,26 +8,25 @@
                 </div>
             </div>
             <div class="row">
+              <div style="display:flex; flex-wrap:wrap; justify-content:center;">
                 
             {% for post in site.posts %} 
                 {% if post.layout == 'homePage' %}
                 
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                            </div>
-                        </div>
+                <div class="col-md-4 col-sm-6 portfolio-item" style="width:374px; margin:15px">
+                    
+                       
                         <iframe width='374' height='250' src='https://www.youtube.com/embed/{{ post.YouTubeTag }}' frameborder='0' allowfullscreen></iframe>
                       
                     </a>
-                    <div class="portfolio-caption">
-                        <h4>{{ post.title }}</h4>
+                    <div style="text-align: center;">
+                        <h5>{{ post.title }}</h4>
                         <p class="text-muted">{{ post.subtitle }}</p>
                     </div>
                 </div>
                 {% endif %}
             {% endfor %}
+            </div>
                 <br style="clear:left">
 <h5>&nbsp;</h5> <h4 class="service-heading"><a href="/rose/videos/">more videos...</a></h4>
             </div>           
