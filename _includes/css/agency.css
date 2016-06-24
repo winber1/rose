@@ -309,7 +309,7 @@ header {
     /* 4/15/2016 we - background without clipping */
     -webkit-background-size: contain;
     -moz-background-size: contain;
-    background-size: cover;
+    background-size: contain;
     -o-background-size: contain;
 }
 
@@ -704,8 +704,11 @@ aside.clients img {
 section#contact {
     background-color: #222;
     background-image: url(img/ftr_background.jpg);
-    background-position: center;
     background-repeat: no-repeat;
+    
+    background-position: center center;
+    /* 4/15/16 we: keep background on top ??? */
+    background-position: top left;
     
     -webkit-background-size: cover;
     -moz-background-size: cover;
