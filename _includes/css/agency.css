@@ -173,7 +173,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default {
     border-color: transparent;
     background-color: #222;
-    opacity:.85;
+    //opacity:.85;
 }
 
 .navbar-default .navbar-brand {
@@ -283,7 +283,7 @@ a.navbar-brand
     a.navbar-brand 
     {
         position:relative; 
-        left:140px; 
+        //left:140px; 
         top:5px;
     }
 }
@@ -292,7 +292,7 @@ header {
   //  text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(img/hdr_kathy.jpg);
+    background-image: url(img/header_roseastrology.jpg);
     
     background-position: center center;
     /* 4/15/16 we: keep background on top ??? */
@@ -340,7 +340,7 @@ header .intro-text .intro-heading {
     position:relative;
     top:25vw;
     left:-100px;
-    
+    visibility: hidden;
 }
 
 @media(min-width:768px) {
@@ -369,7 +369,7 @@ header .intro-text .intro-heading {
 }
 
 section {
-    padding: 100px 0;
+    padding: 75px 0;
 }
 
 section h2.section-heading {
@@ -390,7 +390,7 @@ section h3.section-subheading {
 @media(min-width:768px) {
     section {
         //padding: 150px 0;
-        padding: 100px 0;
+        padding: 75px 0;
     }
 }
 
