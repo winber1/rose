@@ -47,7 +47,7 @@ symbolizes how a person needs to think and communicate is internalized and repre
 Mercury is in Scorpio, the thought process could easily move into secretive, clandestine, covert
 patterns.
 
-<img src='/img/mateenChart.jpg'>
+<img src='../../../../../img/articles/mateenChart.jpg'>
 
 Quite often, when the two inner personal planets are retrograde, we see a second agenda
 swirling under the surface, unknown to others. Symbolically, we could say that Mateen’s 5th
@@ -96,7 +96,7 @@ at the Aries Point (AP): AP = Saturn/Pluto. (See Diagram 1, below. I use the 90�
 which places all the cardinal signs at 0°–29°, the fixed signs at 30°–59°, and the mutable signs at
 60°–89°.)
 
-<img src='rose/img/articles/orlandoShootings.jpg' />
+<img src='../../../../../img/articles/orlandoShootings.jpg' />
 
 When we look at the chart for the event (Chart 2, following page), we can see that the
 Aries Point (0° cardinal) was on the angles. I’ve written about the power of the AP before, and
@@ -114,7 +114,7 @@ in the event chart it falls on an angle!
 Most investigators are now characterizing the shooting as an act of terrorism. The fact
 that the midpoint energy of Saturn/Pluto was active at the AP is no surprise.
 
-<img src='orlandoShootingChart.jpg' />
+<img src='../../../../../img/articles/orlandoShootingChart.jpg' />
 
 Saturn and Neptune Connections
 On the day of the event, Neptune and Saturn were exactly square. This is important
@@ -160,7 +160,7 @@ Now we move to a deeper look at the shooter’s natal midpoint picture (Diagram 
 below), and we see the unmistakable pattern of three heavyweight planets again! Here are the
 relevant midpoints in Mateen’s natal chart:
 
-<img src='mateenMidPoints.jpg' />
+<img src='../../../../../img/articles/mateenMidPoints.jpg' />
 
 • Mars = Saturn/Pluto (assertive energy used to release frustration, fighting back with extreme force)
 • Sun = Saturn/Pluto (achievement through hard work and discipline). This is very important to
@@ -271,7 +271,7 @@ report that the first 911 call came in at 2:02 a.m.
 
 © 2016 Kathy Rose – all rights reserved
 
-<img src='KathyRose.jpg' />
+<img src='../../../../../img/articles/KathyRose.jpg' />
 
 Kathy Rose is an astrologer with an international clientele. She is a Highest Honors Graduate of Noel Tyl’s
 Master’s Degree Certification Course in Astrology and serves as Tyl’s Teaching Associate. Kathy is also the
@@ -279,4 +279,4 @@ producer and publisher of the 9-part Tyl MasterWork DVD series, and has develope
 with her popular YouTube channel (roseastrology), featuring more than 100 videos. To contact her, telephone:
 (757) 340-5516; e-mail: roseastrology@yahoo.com; or visit her website: http://roseastrology.com
 
-
+<a href="../../../../../img/articles/816TMARoseBC.pdf">View pdf version of the file</a>
