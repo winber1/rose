@@ -1,13 +1,8 @@
 ---
-title: Midpoint Madness and the Orlando Massacre
-subtitle: Exploring Mars, Saturn, Pluto Combinations
-layout: article
-date: 2016-08-01
-layout: article
 type: article
-category: article
-tags: none
-description: The tragic mass shooting that recently stunned Orlando, Florida and the rest of the United States — as well as impacting people in far parts of the world — is still producing shock waves of sadness and grief for us all.
+layout: post
+published: false
+title: Untitled
 ---
 by Kathy Rose
 
@@ -89,7 +84,7 @@ Much more could be said about his horoscope, but now let’s look at the midpoin
 other factors in both his chart and that of the shooting event. There are powerful repeating
 patterns involving Mars, Saturn, and Pluto that make a dynamic statement.
 
-Aries Point Activation
+### Aries Point Activation
 The horrific mass murder at the Orlando nightclub that catered to LGBT patrons took
 place when an important and influential midpoint picture was formed by the transiting planets
 at the Aries Point (AP): AP = Saturn/Pluto. (See Diagram 1, below. I use the 90° midpoint sort,
@@ -116,7 +111,7 @@ that the midpoint energy of Saturn/Pluto was active at the AP is no surprise.
 
 <img src='../../../../../img/articles/orlandoShootingChart.jpg' />
 
-Saturn and Neptune Connections
+### Saturn and Neptune Connections
 On the day of the event, Neptune and Saturn were exactly square. This is important
 because Saturn in Sagittarius brings our awareness to religious issues and the potential for
 righteous attachment to strict doctrine or dogma. Neptune in Pisces also calls our attention to
@@ -146,11 +141,11 @@ make a choice, and it was deadly.
 Continuing to examine the midpoints in the event chart, we see more patterns that
 reflect potential violence:
 
-• Neptune = Mars/MC (confusion and idealism with assertive energy)
-• Saturn = Mars/MC (strategic public aggression, focused protest, or violence)
-• Sun = Mars/Pluto (ego is illuminated through extreme passion, aggression, and force)
-• Sun = Neptune/ASC (ego identified with idealism or confusion, possible covert activity)
-• Sun = Saturn/MC — all are exact
+- Neptune = Mars/MC _(confusion and idealism with assertive energy)_
+- Saturn = Mars/MC _(strategic public aggression, focused protest, or violence)_
+- Sun = Mars/Pluto _(ego is illuminated through extreme passion, aggression, and force)_
+- Sun = Neptune/ASC _(ego identified with idealism or confusion, possible covert activity)_
+- Sun = Saturn/MC — all are exact by degree! _(personal achievement through discipline and hard work — the need to exert control)_
 
 Certainly, the midpoints in the event chart accurately reflect the tragic action, and we
 clearly see the repeating pattern with Mars, Saturn, and Pluto.
