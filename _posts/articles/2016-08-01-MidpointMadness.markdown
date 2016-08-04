@@ -1,13 +1,8 @@
 ---
-title: Midpoint Madness and the Orlando Massacre
-subtitle: Exploring Mars, Saturn, Pluto Combinations
-layout: article
-date: 2016-08-01
-layout: article
 type: article
-category: article
-tags: none
-description: The tragic mass shooting that recently stunned Orlando, Florida and the rest of the United States — as well as impacting people in far parts of the world — is still producing shock waves of sadness and grief for us all.
+layout: post
+published: false
+title: Untitled
 ---
 <b>Bonus Content Article for TMA Subscribers — Aug./Sept. 2016 Issue</b>
 <p></p><i>by Kathy Rose</i>
@@ -91,6 +86,7 @@ other factors in both his chart and that of the shooting event. There are powerf
 patterns involving Mars, Saturn, and Pluto that make a dynamic statement.
 <p></p><br>
 <h4>Aries Point Activation</h4>
+
 The horrific mass murder at the Orlando nightclub that catered to LGBT patrons took
 place when an important and influential midpoint picture was formed by the transiting planets
 at the Aries Point (AP): <b>AP = Saturn/Pluto</b>. (See <b>Diagram 1</b>, below. I use the 90° midpoint sort,
@@ -118,6 +114,7 @@ that the midpoint energy of Saturn/Pluto was active at the AP is no surprise.
 <img src='../../../../../img/articles/orlandoShootingChart.jpg' />
 <p></p><br>
 <h4>Saturn and Neptune Connections</h4>
+
 On the day of the event, Neptune and Saturn were exactly square. This is important
 because Saturn in Sagittarius brings our awareness to religious issues and the potential for
 righteous attachment to strict doctrine or dogma. Neptune in Pisces also calls our attention to
