@@ -9,7 +9,8 @@ category: article
 tags: none
 description: The tragic mass shooting that recently stunned Orlando, Florida and the rest of the United States — as well as impacting people in far parts of the world — is still producing shock waves of sadness and grief for us all.
 ---
-by Kathy Rose
+<b>Bonus Content Article for TMA Subscribers — Aug./Sept. 2016 Issue</b>
+<p></p><i>by Kathy Rose</i>
 
 The tragic mass shooting that recently stunned Orlando, Florida and the rest of the
 United States — as well as impacting people in far parts of the world — is still producing shock
@@ -22,7 +23,7 @@ through the clarifying lens of astrology. In particular, I would like to point o
 midpoint pattern involving Mars, Saturn, and Pluto combinations.
 
 First, let’s take a look at the natal chart of the man identified as the shooter inside the
-Pulse nightclub, Omar Mateen. (See Chart 1, below.) Mateen has a stellium in Scorpio falling in
+Pulse nightclub, Omar Mateen. (See <b>Chart 1</b>, below.) Mateen has a stellium in Scorpio falling in
 the 5th house, including the Sun, Mercury retrograde, and Venus retrograde tightly conjunct
 Pluto. At first glance, we are instantly able to understand that the shooter was fueled by
 emotional energy, and that much of this fixed water intensity is internalized (due to the two
@@ -43,7 +44,7 @@ relationship energy.
 
 Natal Mercury retrograde pulls energy inward even more; in Scorpio, the intellectual
 process flows from deep feeling and emotion instead of from objective logic. The planet that
-symbolizes how a person needs to think and communicate is internalized and repressed. And since
+symbolizes <i>how a person needs to think and communicate</i> is internalized and repressed. And since
 Mercury is in Scorpio, the thought process could easily move into secretive, clandestine, covert
 patterns.
 
@@ -61,7 +62,7 @@ that demands our attention when we view this horoscope.
 
 Continuing to look at the relationship and sexual energy in the shooter’s natal chart, we
 must observe that Neptune is conjunct the Descendant. Neptune on an angle can suggest
-unclear energy: “Something is other than it seems.” There is often confusion or bewilderment that
+unclear energy: <i>“Something is other than it seems.”</i> There is often confusion or bewilderment that
 needs to be worked through as part of the life path, and in this case, it flows into relationships.
 Another echo with this same theme is natal Saturn (ruling the 7th and 8th houses) square
 Jupiter in Neptune-ruled Pisces.
@@ -88,11 +89,11 @@ shooting.
 Much more could be said about his horoscope, but now let’s look at the midpoints and
 other factors in both his chart and that of the shooting event. There are powerful repeating
 patterns involving Mars, Saturn, and Pluto that make a dynamic statement.
-
-Aries Point Activation
+<p></p><br>
+<h4>Aries Point Activation</h4>
 The horrific mass murder at the Orlando nightclub that catered to LGBT patrons took
 place when an important and influential midpoint picture was formed by the transiting planets
-at the Aries Point (AP): AP = Saturn/Pluto. (See Diagram 1, below. I use the 90° midpoint sort,
+at the Aries Point (AP): <b>AP = Saturn/Pluto</b>. (See <b>Diagram 1</b>, below. I use the 90° midpoint sort,
 which places all the cardinal signs at 0°–29°, the fixed signs at 30°–59°, and the mutable signs at
 60°–89°.)
 
@@ -100,23 +101,23 @@ which places all the cardinal signs at 0°–29°, the fixed signs at 30°–59�
 
 When we look at the chart for the event (Chart 2, following page), we can see that the
 Aries Point (0° cardinal) was on the angles. I’ve written about the power of the AP before, and
-how this zone in the zodiac carries a public projection dynamic. As I first glanced at the event
+how this zone in the zodiac carries a <i>public projection</i> dynamic. As I first glanced at the event
 chart, my eye naturally could see that the midpoint of transiting Saturn and Pluto that day was
 at the AP. Pause for a moment and let that soak into your consciousness. Combine the symbols
 of Saturn and Pluto with the AP. What do you feel? It’s a heavy, somber, serious public
 statement!
 
 The Saturn/Pluto midpoint carries the most challenging energy of all the planetary
-combinations, and on the day of the shooting, it was located at 29°38’ Sagittarius — just half a degree from being exactly on the 0° cardinal mark. We could interpret this as the potential for loss
-and destruction on a wide public scale. This powerful midpoint is made even more active because
+combinations, and on the day of the shooting, it was located at 29°38’ Sagittarius — just half a degree from being exactly on the 0° cardinal mark. We could interpret this as the <i>potential for loss
+and destruction on a wide public scale</i>. This powerful midpoint is made even more active because
 in the event chart it falls on an angle!
 
 Most investigators are now characterizing the shooting as an act of terrorism. The fact
 that the midpoint energy of Saturn/Pluto was active at the AP is no surprise.
 
 <img src='../../../../../img/articles/orlandoShootingChart.jpg' />
-
-Saturn and Neptune Connections
+<p></p><br>
+<h4>Saturn and Neptune Connections</h4>
 On the day of the event, Neptune and Saturn were exactly square. This is important
 because Saturn in Sagittarius brings our awareness to religious issues and the potential for
 righteous attachment to strict doctrine or dogma. Neptune in Pisces also calls our attention to
@@ -124,7 +125,7 @@ matters of faith
 
 The current transiting Saturn–Neptune square had been activating Mateen’s natal
 Saturn–Midheaven (MC) square. The shooter’s Saturn return was in full swing, pushing him to
-make big life decisions — this is when we are urged to grow up and pick our path. The potent
+make big life decisions — this is when we are urged to <i>grow up and pick our path</i>. The potent
 cycle at 29 years of age offers a major course correction, and we make choices about our
 commitment to achievement. We know that when Saturn comes back to its natal position, there
 is a push to move into a new level of maturity.
@@ -146,31 +147,36 @@ make a choice, and it was deadly.
 Continuing to examine the midpoints in the event chart, we see more patterns that
 reflect potential violence:
 
-• Neptune = Mars/MC (confusion and idealism with assertive energy)
-• Saturn = Mars/MC (strategic public aggression, focused protest, or violence)
-• Sun = Mars/Pluto (ego is illuminated through extreme passion, aggression, and force)
-• Sun = Neptune/ASC (ego identified with idealism or confusion, possible covert activity)
-• Sun = Saturn/MC — all are exact
+<ul>
+<li><b>Neptune = Mars/MC</b> <i>(confusion and idealism with assertive energy)</i></li>
+<li><b>Saturn = Mars/MC</b> <i>(strategic public aggression, focused protest, or violence)</i></li>
+<li><b>Sun = Mars/Pluto</b> <i>(ego is illuminated through extreme passion, aggression, and force)</i></li>
+<li><b>Sun = Neptune/ASC</b> <i>(ego identified with idealism or confusion, possible covert activity)</i></li>
+<li><b>Sun = Saturn/MC</b> — all are exact by degree! <i>(personal achievement through discipline and hard
+work — the need to exert control)</i></li>
+</ul>
 
 Certainly, the midpoints in the event chart accurately reflect the tragic action, and we
 clearly see the repeating pattern with Mars, Saturn, and Pluto.
-
-Omar Mateen’s Natal Midpoints
+<p></p><br>
+<h4>Omar Mateen’s Natal Midpoints</h4>
 Now we move to a deeper look at the shooter’s natal midpoint picture (Diagram 2,
 below), and we see the unmistakable pattern of three heavyweight planets again! Here are the
 relevant midpoints in Mateen’s natal chart:
 
 <img src='../../../../../img/articles/mateenMidPoints.jpg' />
 
-• Mars = Saturn/Pluto (assertive energy used to release frustration, fighting back with extreme force)
-• Sun = Saturn/Pluto (achievement through hard work and discipline). This is very important to
+<ul>
+<li><b>Mars = Saturn/Pluto</b> <i>(assertive energy used to release frustration, fighting back with extreme force)</i></li>
+<li><b>Sun = Saturn/Pluto</b> <i>(achievement through hard work and discipline).</i>This is very important to
 consider, because transiting Mars in Scorpio was retrograding back to a conjunction with the
-natal Sun, further igniting and triggering the killer’s aggressive tendencies.
-• AP = Mars/Pluto (extreme and forceful energy with public projection). What a sad thing — to
+natal Sun, further igniting and triggering the killer’s aggressive tendencies.</li>
+<li><b>AP = Mars/Pluto</b> <i>(extreme and forceful energy with public projection). </i>What a sad thing — to
 become famous (AP energy) for a horrible, historic act of extreme violence! This became his
-legacy of infamy.
-
-Mateen’s Midpoints Activated by Transits
+legacy of infamy.</li>
+</ul>
+<p></p><br>
+<h4>Mateen’s Midpoints Activated by Transits</h4>
 Natal midpoint activation by transiting planets or by Solar Arc directions is important to
 consider. When I analyze triggers to key midpoints, I keep the orb very tight. I look for an exact
 hit by degree, and the closer to the minute, the better.
@@ -180,21 +186,21 @@ Mateen’s natal AP = Mars/Pluto. This presents an amazing correlation with the 
 violence.
 
 The pattern continues with transiting Pluto at 16°49’ Capricorn, igniting Mateen’s natal
-Mars/Saturn midpoint, which is 17°01’ Capricorn (assertive energy and discipline come together
-with forceful projection — extreme anger and frustration). This is again a very challenging and
+Mars/Saturn midpoint, which is 17°01’ Capricorn <i>(assertive energy and discipline come together
+with forceful projection — extreme anger and frustration)</i>. This is again a very challenging and
 difficult combination of energies.
 
 The transiting Sun at 21°42’ Gemini on the day of the shooting was illuminating and
-energizing Mateen’s Saturn/Ascendant midpoint, which is 21°24’ Pisces (personal achievement
-through hard work and discipline). The Sun also triggered his Mars/North Node midpoint (public
-aggression or protest).
+energizing Mateen’s Saturn/Ascendant midpoint, which is 21°24’ Pisces <i>(personal achievement
+through hard work and discipline)</i>. The Sun also triggered his Mars/North Node midpoint <i>(public
+aggression or protest)</i>.
 
 In addition, there was an exact trigger from transiting Mercury to the natal
-Uranus/Pluto midpoint — and also conjunct Mateen’s natal Moon (intense thought activity and
-emotion that overturns the status quo – agitated thinking).
+Uranus/Pluto midpoint — and also conjunct Mateen’s natal Moon <i>(intense thought activity and
+emotion that overturns the status quo – agitated thinking)</i>.
 
 One more thing: Mateen’s MC and Saturn had moved by Solar Arc to exactly trigger his
-natal Jupiter/Pluto midpoint (strategic amplification of personal power).
+natal Jupiter/Pluto midpoint <i>(strategic amplification of personal power)</i>.
 
 Again and again, we see the repeating pattern of Mars, Saturn, Pluto combinations
 standing out.
@@ -220,10 +226,10 @@ even his rage — feelings in deep conflict with his religious views — helped 
 make these unfortunate choices. An unresolvable emotional conundrum led to a downward
 spiral that triggered the shadow and negative manifestations of all the aforementioned natal
 energies.
-
-Spectrum of Expression
+<p></p><br>
+<h4>Spectrum of Expression</h4>
 When I teach astrology, I frequently mention the importance of considering the concept
-of spectrum of expression regarding the natal chart. I believe that two people can be born on the
+of <i>spectrum of expression</i> regarding the natal chart. I believe that two people can be born on the
 same day, at the same time and location, and yet express vastly different levels of the planetary
 patterns in their natal chart. When we take physical form on the Earth plane, we bring with us
 the strengths and vulnerabilities from other incarnations — based on how we’ve chosen to react
@@ -253,30 +259,31 @@ informed of the potential difficulties if we see similar patterns in our client�
 goal is to be of service and to help others find a path to the most positive expression of the natal
 chart.
 
-We must use this knowledge and awareness with wisdom,
-
-
-Kathy Rose is an astrologer with an international clientele. She is a Highest Honors Graduate of Noel Tyl’s
-Master’s Degree Certification Course in Astrology and serves as Tyl’s Teaching Associate. Kathy is also the
-producer and publisher of the 9-part Tyl MasterWork DVD series, and has developed an appreciative audience
-with her popular YouTube channel (roseastrology), featuring more than 100 videos. To contact her, telephone:
-(757) 340-5516; e-mail: roseastrology@yahoo.com; or visit her website: http://roseastrology.comintegrity, and humility. That
+We must use this knowledge and awareness with wisdom, integrity, and humility. That
 is the path of the astrologer.
 
-Chart Data and Sources
-Omar Mateen, November 16, 1986; 7:00 p.m. EST; Queens, NY, USA (40°N43’, 73°W52’); AA: birth
+
+<p></p><br>
+
+<h5>Chart Data and Sources</h5>
+<b>Omar Mateen</b>, November 16, 1986; 7:00 p.m. EST; Queens, NY, USA (40°N43’, 73°W52’); AA: birth
 certificate published in The New York Times, June 19, 2016.
-Orlando Shooting, June 12, 2016; 2:02 a.m. EDT; Orlando, FL, USA (28°N32’, 81°W23’); news sources
+<br>
+<b>Orlando Shooting</b>, June 12, 2016; 2:02 a.m. EDT; Orlando, FL, USA (28°N32’, 81°W23’); news sources
 report that the first 911 call came in at 2:02 a.m.
 
-© 2016 Kathy Rose – all rights reserved
+<p></p><br>
 
+<center>
+© 2016 Kathy Rose – all rights reserved<br clear='left'>
 <img src='../../../../../img/articles/KathyRose.jpg' />
+</center>
+<p></p><br>
 
-Kathy Rose is an astrologer with an international clientele. She is a Highest Honors Graduate of Noel Tyl’s
+<i><b>Kathy Rose</b> is an astrologer with an international clientele. She is a Highest Honors Graduate of Noel Tyl’s
 Master’s Degree Certification Course in Astrology and serves as Tyl’s Teaching Associate. Kathy is also the
 producer and publisher of the 9-part Tyl MasterWork DVD series, and has developed an appreciative audience
 with her popular YouTube channel (roseastrology), featuring more than 100 videos. To contact her, telephone:
-(757) 340-5516; e-mail: roseastrology@yahoo.com; or visit her website: http://roseastrology.com
+(757) 340-5516; e-mail: <a href="mailto:roseastrology@yahoo.com">roseastrology@yahoo.com</a>; or visit her website: <a  href="http://roseastrology.com">http://roseastrology.com</a></i>
 
 <a href="../../../../../img/articles/816TMARoseBC.pdf">View pdf version of the file</a>
