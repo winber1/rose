@@ -1,11 +1,20 @@
 ---
+title: Midpoint Madness and the Orlando Massacre
+subtitle: Exploring Mars, Saturn, Pluto Combinations
+layout: article
+date: 2016-08-01
+layout: article
 type: article
-layout: post
-published: false
-title: Untitled
+category: article
+tags: none
+description: The tragic mass shooting that recently stunned Orlando, Florida and the rest of the United States — as well as impacting people in far parts of the world — is still producing shock waves of sadness and grief for us all.
+
 ---
-<b>Bonus Content Article for TMA Subscribers — Aug./Sept. 2016 Issue</b>
-<p></p><i>by Kathy Rose</i>
+<b>Bonus Content Article for TMA Subscribers — Aug./Sept. 2016 Issue</b><br>
+
+<a href="../../../../../img/articles/816TMARoseBC.pdf">View pdf version of the file</a><br>
+
+<p></p><i>by Kathy Rose</i><br>
 
 The tragic mass shooting that recently stunned Orlando, Florida and the rest of the
 United States — as well as impacting people in far parts of the world — is still producing shock
@@ -276,6 +285,8 @@ report that the first 911 call came in at 2:02 a.m.
 <img src='../../../../../img/articles/KathyRose.jpg' />
 </center>
 <p></p><br>
+
+<img src="../../../../../img/articles/KathyRose2.jpg">
 
 <i><b>Kathy Rose</b> is an astrologer with an international clientele. She is a Highest Honors Graduate of Noel Tyl’s
 Master’s Degree Certification Course in Astrology and serves as Tyl’s Teaching Associate. Kathy is also the
