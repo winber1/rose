@@ -1,11 +1,14 @@
 $(function() {
-
+   
+/*
     $("input,textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
             // additional error messages or events
         },
         submitSuccess: function($form, event) {
+            alert("gothere");ic_signupform
+           
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
             var name = $("input#name").val();
@@ -51,6 +54,7 @@ $(function() {
                     $('#contactForm').trigger("reset");
                 },
             })
+            
         },
         filter: function() {
             return $(this).is(":visible");
@@ -61,6 +65,7 @@ $(function() {
         e.preventDefault();
         $(this).tab("show");
     });
+    */
 });
 
 

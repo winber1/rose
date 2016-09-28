@@ -286,7 +286,7 @@ report that the first 911 call came in at 2:02 a.m.
 </center>
 <p></p><br>
 
-<img src="../../../../../img/articles/KathyRose2.jpg">
+
 
 <i><b>Kathy Rose</b> is an astrologer with an international clientele. She is a Highest Honors Graduate of Noel Tyl’s
 Master’s Degree Certification Course in Astrology and serves as Tyl’s Teaching Associate. Kathy is also the
