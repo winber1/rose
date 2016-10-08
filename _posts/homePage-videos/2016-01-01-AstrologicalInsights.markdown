@@ -1,11 +1,11 @@
 ---
-title: Astrological Insights - August 2016
+title: Astrological Insights - October 2016
 subtitle: 
 layout: homePage
 modal-id: 4
 date: 2014-07-15
 img: treehouse.png
-YouTubeTag: iQO9FUbkdVw
+YouTubeTag: jsLcoOrf8yg
 thumbnail: treehouse-thumbnail.png
 type: homePage
 alt: image-alt
