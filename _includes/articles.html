@@ -14,9 +14,12 @@
     {% if post.layout == 'article' %}
         {% capture counttwo %}{{ counttwo | plus: '1' }}{% endcapture %}
         {% if counttwo <= '3' %}
-        <h4  class="service-heading"><a href="/rose{{ post.url }}">{{ post.title }}</a></h4>
+            
+                <img class="img-circle img-responsive" style="float:left; margin:15px" src={{ post.thumbnail }} alt="">
+          
+                <h4  class="service-heading"><a href="/rose{{ post.url }}">{{ post.title }}</a></h4>
                 <p class="text-muted">{{ post.description }}&nbsp;&nbsp; <b><a href="/rose{{ post.url }}">more...</a></b>
-                </p><br>
+                </p><br clear="all">
              
            
     {% endif %}{% endif %}

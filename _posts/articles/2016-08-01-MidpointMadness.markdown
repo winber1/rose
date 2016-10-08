@@ -7,6 +7,7 @@ layout: article
 type: article
 category: article
 tags: none
+thumbnail: img/articles/omarMateen.png
 description: The tragic mass shooting that recently stunned Orlando, Florida and the rest of the United States — as well as impacting people in far parts of the world — is still producing shock waves of sadness and grief for us all.
 
 ---
