@@ -9,21 +9,29 @@
             </div>
             <div class="row text-left">
                 <div class="col-md-12">   
+                    <ul style="list-style-type: none;">
+                       
                 
 {% for post in site.posts %}
     {% if post.layout == 'article' %}
         {% capture counttwo %}{{ counttwo | plus: '1' }}{% endcapture %}
         {% if counttwo <= '3' %}
             
-                <img class="img-circle img-responsive" style="float:left; margin:15px" src={{ post.thumbnail }} alt="">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" style="float:left; height:100px; width:100px; margin:15px" src={{ post.thumbnail }} alt="">
+                            </div>
+                        
           
-                <h4  class="service-heading"><a href="/rose{{ post.url }}">{{ post.title }}</a></h4>
-                <p class="text-muted">{{ post.description }}&nbsp;&nbsp; <b><a href="/rose{{ post.url }}">more...</a></b>
+                            <div>
+                                <h4  class="service-heading"><a href="/rose{{ post.url }}">{{ post.title }}</a></h4>
+                                <p class="text-muted">{{ post.description }}&nbsp;&nbsp; <b><a href="/rose{{ post.url }}">more...</a></b>
                 </p><br clear="all">
-             
+                            </div>
+                        </li>
            
     {% endif %}{% endif %}
-{% endfor %}    <br>     
+                    {% endfor %}  </ul>  <br>     
                     
                 
             <h4 class="service-heading"><a href="/rose/articles/">article archive...</a></h4>
