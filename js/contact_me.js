@@ -1,6 +1,6 @@
 $(function() {
-   
-
+  
+    /*
     $("input,textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
@@ -65,6 +65,7 @@ $(function() {
         e.preventDefault();
         $(this).tab("show");
     });
+    */
    
 });
 
