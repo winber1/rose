@@ -6,8 +6,9 @@ var $_ICV = {
 	validate:function(e)
 	{	
 			var div 	= document.querySelectorAll("div.formEl"),
-				emailField = document.querySelectorAll('div.formEl input[name="data[email]"]')[0],
-				errors 	= [];
+			emailField = document.querySelectorAll('div.formEl input[name="data[email]"]')[0],
+			errors 	= [];
+            var formData = "";
 
 			for(i=0;i<div.length;i++) {
 
@@ -16,6 +17,7 @@ var $_ICV = {
 						label			= div[i].getAttribute('data-label'),
 						value 			= '',
 						confirmEmail 	= false;
+                formData += label + "=";
 
 				try {
 
@@ -57,7 +59,8 @@ var $_ICV = {
 					else {
 						throw "Unknown validation error has occured. Please contact support.";
 					}
-
+                    
+                    
 					valid = $_ICV._validate_field(value, type);
 					if(!valid && required){
 						errors.push($_ICV._get_error(label, type));
@@ -69,6 +72,8 @@ var $_ICV = {
 					if (valid && confirmEmail && confirmEmail.value !== emailField.value) {
 						errors.push($_ICV._get_error(label, 99));
 					} 
+                    
+                    formData += value + "&";
 
 				} catch(ex) {
 					alert(ex);
@@ -80,12 +85,32 @@ var $_ICV = {
 
 			if(errors.length > 0) {
                 // fix alert here
-				alert(errors.join("\n"));
+				// alert(errors.join("\n"));
+                $("#formMessage").show();
+                $("#formMessage p").html("<b>" + errors + "</b>");
 				e.preventDefault();
 				e.stopPropagation();
 				return false;
 			}
-			return true;
+            
+            // try to post data
+        
+         /*   $.post("https://app.icontact.com/icp/core/mycontacts/signup/designer/form/?id=41&amp;cid=872462&amp;lid=7947", function(data, status){
+            alert("Data: " + data + "\nStatus: " + status);
+    }); */
+			alert("Data: " + data );
+            deferred = $.post("https://app.icontact.com/icp/core/mycontacts/signup/designer/form/?id=41&amp;cid=872462&amp;lid=7947", { formData });
+
+            deferred.success(function () {
+                alert("post success");
+            });
+
+            deferred.error(function () {
+                alert("post error");
+            });
+            
+        
+            return true;
 
 	},
 	_validate_field:function(value, type)
@@ -103,7 +128,7 @@ var $_ICV = {
 		else if(type==2)													return "'"+label+"' field must be checked.";
 		else if(type==4) 													return "'"+label+"' field has an invalid date format. MM/DD/YYYY";
 		else if(type==3 || type==5 || type==6 || type==7 || type==8) 		return "'"+label+"' field must be a number. Please limit your value to 20 digits (not including any digits after the decimal).";
-		else if(type==98)													return "'"+label+"' is an invalid Email Address";
+		else if(type==98)													return "Please enter a valid Email Address.";
 		else if(type==99)													return "Email Fields Do Not Match";
 		else																return 'Unknown validation error';
 	},
@@ -124,3 +149,29 @@ var $_ICV = {
 	}
 }
 window.addEventListener("load", $_ICV.init);
+
+/*
+
+//try this
+$("#myform").submit(function(event) {
+    event.preventDefault();
+    var val = $(this).find('input[type="text"]').val();
+
+    // I like to use defers :)
+    deferred = $.post("http://somewhere.com", { val: val });
+
+    deferred.success(function () {
+        // Do your stuff.
+    });
+
+    deferred.error(function () {
+        // Handle any errors here.
+    });
+    
+// try this:
+var  formData = "name=ravi&age=31";  //Name value Pair
+    or
+var formData = {name:"ravi",age:"31"}; //Array 
+});
+
+*/
