@@ -2,6 +2,12 @@ var $_ICV = {
 	init:function()
 	{
 		document.getElementById("ic_signupform").addEventListener("submit", $_ICV.validate);
+        
+        document.getElementById("emailData").addEventListener("onfocus", (function() {
+      $(this).val() == '';
+      }));
+        
+
 	},
 	validate:function(e)
 	{	
@@ -87,6 +93,7 @@ var $_ICV = {
                 // fix alert here
 				// alert(errors.join("\n"));
                 $("#formMessage").show();
+                $("#formMessage").removeClass('bg-info').addClass('bg-danger');
                 $("#formMessage p").html("<b>" + errors + "</b>");
 				e.preventDefault();
 				e.stopPropagation();
@@ -98,18 +105,29 @@ var $_ICV = {
          /*   $.post("https://app.icontact.com/icp/core/mycontacts/signup/designer/form/?id=41&amp;cid=872462&amp;lid=7947", function(data, status){
             alert("Data: " + data + "\nStatus: " + status);
     }); */
-			alert("Data: " + data );
+			e.preventDefault();
             deferred = $.post("https://app.icontact.com/icp/core/mycontacts/signup/designer/form/?id=41&amp;cid=872462&amp;lid=7947", { formData });
 
-            deferred.success(function () {
-                alert("post success");
+            deferred.done(function () {
+               console.log("post done");
             });
 
-            deferred.error(function () {
-                alert("post error");
+            deferred.fail(   
+                function(xhr, textStatus, errorThrown) {
+                    console.log("post fail");
+                    console.log(xhr.responseText);
+            });
+        
+            deferred.always(function () {
+                $("#formMessage").removeClass('bg-danger').addClass('bg-info');
+                console.log("post always");
+                $("#formMessage").show();
+                $("#formMessage p").html("<b>Thank you for subscribing!</b>");
+                
+                
             });
             
-        
+            //console.log('gothere');
             return true;
 
 	},

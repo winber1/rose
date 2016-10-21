@@ -207,14 +207,19 @@
    font-size: 100%;
    font-family: inherit;
    width: auto;
-}</style>
+}
+
+#formMessage{
+    padding:10px 10px 1px; margin:10px; border-radius:3px; display:none;
+}
+</style>
                            
 <form id="ic_signupform" method="POST" action="https://app.icontact.com/icp/core/mycontacts/signup/designer/form/?id=41&amp;cid=872462&amp;lid=7947">
     <div class="elcontainer normal stacked left-aligned">
         <div class="sortables">
             <div class="formEl fieldtype-input required" data-validation-type="1" data-label="Email" style="display: inline-block; width: 100%;">
                 <label>Email<span class="indicator required">*</span></label>
-                <input type="text" placeholder="" name="data[email]">
+                <input id="emailData" type="text" placeholder="" name="data[email]">
             </div>
             <div class="formEl fieldtype-checkbox required" dataname="listGroups" data-validation-type="1" data-label="Lists" style="display: none; width: 100%;">
                 <h3>Lists<span class="indicator required">*</span></h3>
@@ -225,7 +230,7 @@
             <div class="submit-container">
                 <input type="submit" value="Submit" class="btn btn-submit">
             </div>
-            <div id='formMessage' class="bg-danger" style="padding:10px 10px 1px; margin:10px; border-radius:3px; display:none;">
+            <div id='formMessage' class="bg-danger" >
                 <p style="color:white"><b>message</b></p>
             </div>
         </div>
