@@ -2,11 +2,8 @@ var $_ICV = {
 	init:function()
 	{
 		document.getElementById("ic_signupform").addEventListener("submit", $_ICV.validate);
-        
-        document.getElementById("emailData").addEventListener("onfocus", (function() {
-      $(this).val() == '';
-      }));
-        
+        document.getElementById("ic_signupform2").addEventListener("submit", $_ICV.validate);
+
 
 	},
 	validate:function(e)
@@ -15,6 +12,8 @@ var $_ICV = {
 			emailField = document.querySelectorAll('div.formEl input[name="data[email]"]')[0],
 			errors 	= [];
             var formData = "";
+        
+            var btnClick = $(document.activeElement).attr('id');
 
 			for(i=0;i<div.length;i++) {
 
@@ -22,10 +21,20 @@ var $_ICV = {
 						type 			= parseInt(div[i].getAttribute('data-validation-type')),
 						label			= div[i].getAttribute('data-label'),
 						value 			= '',
+                        id              = div[i].id,
 						confirmEmail 	= false;
-                formData += label + "=";
+                
+                
+                if( (label != 'Email') || 
+                    (btnClick == "hdrSubmit" && id == "hdrEmail") || 
+                    (btnClick == "ftrSubmit" && id == "ftrEmail"))
+                {  
+                    
+                    
 
 				try {
+                    
+                    formData += label + "="; 
 
 					if(div[i].querySelectorAll("input").length > 0){
 
@@ -79,7 +88,8 @@ var $_ICV = {
 						errors.push($_ICV._get_error(label, 99));
 					} 
                     
-                    formData += value + "&";
+                    formData += value + "&"; 
+                
 
 				} catch(ex) {
 					alert(ex);
@@ -87,24 +97,31 @@ var $_ICV = {
 					e.stopPropagation();
 					return false;
 				}
+                }
 			}
 
 			if(errors.length > 0) {
-                // fix alert here
-				// alert(errors.join("\n"));
-                $("#formMessage").show();
-                $("#formMessage").removeClass('bg-info').addClass('bg-danger');
-                $("#formMessage p").html("<b>" + errors + "</b>");
+                var msg, msgHTML = "";
+                
+                if (btnClick == 'hdrSubmit')
+                { msg = $("#hdrFormMessage"); msgHTML = $("#hdrFormMessage>p");}
+                else
+                { msg = $("#ftrFormMessage"); msgHTML = $("#ftrFormMessage>p");}
+                 
+                msg.show();
+                msgHTML.html("<b>Please enter a valid Email Address.</b>");
 				e.preventDefault();
 				e.stopPropagation();
 				return false;
 			}
             
             // try to post data
-        
-         /*   $.post("https://app.icontact.com/icp/core/mycontacts/signup/designer/form/?id=41&amp;cid=872462&amp;lid=7947", function(data, status){
-            alert("Data: " + data + "\nStatus: " + status);
-    }); */
+
+/* 
+we cannot deferr post since:
+
+XMLHttpRequest cannot load https://app.icontact.com/icp/core/mycontacts/signup/designer/form/?id=41&amp;cid=872462&amp;lid=7947. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://winber1.github.io' is therefore not allowed access. The response had HTTP status code 500.
+
 			e.preventDefault();
             deferred = $.post("https://app.icontact.com/icp/core/mycontacts/signup/designer/form/?id=41&amp;cid=872462&amp;lid=7947", { formData });
 
@@ -127,7 +144,7 @@ var $_ICV = {
                 
             });
             
-            //console.log('gothere');
+*/
             return true;
 
 	},

@@ -34,7 +34,8 @@
 
 </style>
 <style type="text/css" id="signupBuilderStyles">
-#ic_signupform .elcontainer {
+#ic_signupform  .elcontainer,
+#ic_signupform2 .elcontainer {
    background: #ffffff;
    text-align: left;
    max-width: 450px;
@@ -46,16 +47,19 @@
    font-family: lucida grande;
 }
 
-#ic_signupform .elcontainer.center-aligned .formEl { 
+#ic_signupform  .elcontainer.center-aligned .formEl, 
+#ic_signupform2 .elcontainer.center-aligned .formEl { 
 	margin-right: auto;
 	margin-left: auto; 
 }
 
-#ic_signupform .elcontainer.right-aligned .formEl { 
+#ic_signupform  .elcontainer.right-aligned .formEl,
+#ic_signupform2 .elcontainer.right-aligned .formEl{ 
 	margin-left: auto; 
 }
 
-#ic_signupform .form-header {
+#ic_signupform  .form-header,
+#ic_signupform2 .form-header{
    
       display: none;
    
@@ -75,7 +79,8 @@
    border-bottom: 1px solid #dddddd;
 }
 
-#ic_signupform .elcontainer.inline-label-left .formEl.fieldtype-input label,
+#ic_signupform  .elcontainer.inline-label-left .formEl.fieldtype-input label,
+#ic_signupform2 .elcontainer.inline-label-left .formEl.fieldtype-input label,
 #ic_signupform .elcontainer.inline-label-left .formEl.fieldtype-dropdown label,
 #ic_signupform .elcontainer.inline-label-left .formEl.fieldtype-radio h3,
 #ic_signupform .elcontainer.inline-label-left .formEl.fieldtype-checkbox h3,
@@ -108,25 +113,32 @@
 }
 
 #ic_signupform .elcontainer.inline-label-left .formEl input[type="text"],
+#ic_signupform2 .elcontainer.inline-label-left .formEl input[type="text"],
 #ic_signupform .elcontainer.inline-label-left .formEl select,
+#ic_signupform2 .elcontainer.inline-label-left .formEl select,
 #ic_signupform .elcontainer.inline-label-left .formEl.fieldtype-radio .option-container,
 #ic_signupform .elcontainer.inline-label-left .formEl.fieldtype-checkbox .option-container,
 #ic_signupform .elcontainer.inline-label-right .formEl input[type="text"],
+#ic_signupform2 .elcontainer.inline-label-right .formEl input[type="text"],
 #ic_signupform .elcontainer.inline-label-right .formEl select,
+#ic_signupform2 .elcontainer.inline-label-right .formEl select,
 #ic_signupform .elcontainer.inline-label-right .formEl.fieldtype-radio .option-container,
 #ic_signupform .elcontainer.inline-label-right .formEl.fieldtype-checkbox .option-container {
    width: 70%;
 }
 
-#ic_signupform .elcontainer.hidden-label .formEl.required:before {
+#ic_signupform  .elcontainer.hidden-label .formEl.required:before, 
+#ic_signupform2 .elcontainer.hidden-label .formEl.required:before {
    color: #bdbdbf;
 }
 	   
-#ic_signupform .elcontainer .formEl {
+#ic_signupform  .elcontainer .formEl,
+#ic_signupform2 .elcontainer .formEl{
    font-size: 1em;
 }
 
-#ic_signupform .elcontainer .formEl.fieldtype-input label,
+#ic_signupform  .elcontainer .formEl.fieldtype-input label,
+#ic_signupform2 .elcontainer .formEl.fieldtype-input label,
 #ic_signupform .elcontainer .formEl.fieldtype-dropdown label,
 #ic_signupform .elcontainer .formEl.fieldtype-radio h3,
 #ic_signupform .elcontainer .formEl.fieldtype-checkbox h3 {
@@ -135,43 +147,52 @@
    color: #5a5a5e;
 }
 
-#ic_signupform .elcontainer .formEl.fieldtype-input input[type="text"],
+#ic_signupform  .elcontainer .formEl.fieldtype-input input[type="text"],
+#ic_signupform2 .elcontainer .formEl.fieldtype-input input[type="text"],
 #ic_signupform .elcontainer .formEl.fieldtype-dropdown select {
    background-color: #f5f5f5;
    border: 1px solid #e7e7e7;
    border-radius: 3px;
 }
 	   
-#ic_signupform .elcontainer .formEl.fieldtype-input input[type="text"],
+#ic_signupform  .elcontainer .formEl.fieldtype-input input[type="text"],
+#ic_signupform2 .elcontainer .formEl.fieldtype-input input[type="text"],
 #ic_signupform .elcontainer .formEl.fieldtype-dropdown select,
 #ic_signupform .elcontainer .formEl.fieldtype-radio label,
 #ic_signupform .elcontainer .formEl.fieldtype-checkbox label {
    font-size: 100%;
 }
 
-#ic_signupform .elcontainer .formEl input[type="text"]::-moz-placeholder {
+#ic_signupform  .elcontainer .formEl input[type="text"]::-moz-placeholder,
+#ic_signupform2 .elcontainer .formEl input[type="text"]::-moz-placeholder{
    color: #bdbdbf;
    font-family: inherit;
 }
 
-#ic_signupform .elcontainer .formEl input[type="text"]::-webkit-input-placeholder {
+#ic_signupform  .elcontainer .formEl input[type="text"]::-webkit-input-placeholder,
+#ic_signupform2 .elcontainer .formEl input[type="text"]::-webkit-input-placeholder {
    color: #bdbdbf;
    font-family: inherit;
 }
 
-#ic_signupform .elcontainer .formEl input[type="text"]:-ms-input-placeholder {
+#ic_signupform  .elcontainer .formEl input[type="text"]:-ms-input-placeholder,
+#ic_signupform2 .elcontainer .formEl input[type="text"]:-ms-input-placeholder {
    color: #bdbdbf;
    font-family: inherit;
 }
 
-#ic_signupform .elcontainer .formEl input[type="text"],
-#ic_signupform .elcontainer .formEl select,
-#ic_signupform .elcontainer .formEl .option-container label {
+#ic_signupform  .elcontainer .formEl input[type="text"],
+#ic_signupform  .elcontainer .formEl select,
+#ic_signupform  .elcontainer .formEl .option-container label,
+#ic_signupform2 .elcontainer .formEl input[type="text"],
+#ic_signupform2 .elcontainer .formEl select,
+#ic_signupform2 .elcontainer .formEl .option-container label{
    color: #bdbdbf;
    font-family: inherit;
 }
 	   
-#ic_signupform .elcontainer.inline-button .submit-container {
+#ic_signupform  .elcontainer.inline-button .submit-container,
+#ic_signupform2 .elcontainer.inline-button .submit-container{
 	display: inline-block;
 	box-sizing: border-box;
 	right: -.5em;
@@ -181,23 +202,28 @@
 	margin-bottom: 1em;
 }
 	
-#ic_signupform .elcontainer.inline-button.tight .sortables {
+#ic_signupform  .elcontainer.inline-button.tight .sortables,
+#ic_signupform2 .elcontainer.inline-button.tight .sortables{
 	margin-bottom: -.5em;
 }
 	
-#ic_signupform .elcontainer.inline-button .sortables {
+#ic_signupform .elcontainer.inline-button .sortables,
+#ic_signupform2 .elcontainer.inline-button .sortables{
 	margin-bottom: -1em;
 }
 	
-#ic_signupform .elcontainer.inline-button.generous .sortables {
+#ic_signupform .elcontainer.inline-button.generous .sortables,
+#ic_signupform2 .elcontainer.inline-button.generous .sortables{
 	margin-bottom: -1.5em;
 }
 
-#ic_signupform .elcontainer .submit-container {
+#ic_signupform  .elcontainer .submit-container,
+#ic_signupform2 .elcontainer .submit-container{
    text-align: left;
 }
 
-#ic_signupform .elcontainer .submit-container input[type="submit"] {
+#ic_signupform .elcontainer .submit-container input[type="submit"],
+#ic_signupform2 .elcontainer .submit-container input[type="submit"]{
    background: #e7cd4d;
    border: 0px solid #e7ce4d;
    border-radius: 3px;
@@ -209,17 +235,20 @@
    width: auto;
 }
 
-#formMessage{
-    padding:10px 10px 1px; margin:10px; border-radius:3px; display:none;
+#hdrFormMessage{
+    padding:10px 10px 1px; margin:10px; border-radius:3px; display:none; text-align: center;
+}
+#ftrFormMessage{
+    padding:10px 10px 1px; margin:10px 10px 10px -2px; border-radius:3px; display:none; width:90%; text-align: center;
 }
 </style>
                            
 <form id="ic_signupform" method="POST" action="https://app.icontact.com/icp/core/mycontacts/signup/designer/form/?id=41&amp;cid=872462&amp;lid=7947">
     <div class="elcontainer normal stacked left-aligned">
         <div class="sortables">
-            <div class="formEl fieldtype-input required" data-validation-type="1" data-label="Email" style="display: inline-block; width: 100%;">
+            <div class="formEl fieldtype-input required" id="hdrEmail" data-validation-type="1" data-label="Email" style="display: inline-block; width: 100%;">
                 <label>Email<span class="indicator required">*</span></label>
-                <input id="emailData" type="text" placeholder="" name="data[email]">
+                <input type="text" placeholder="" name="data[email]" onfocus="$('#hdrFormMessage').hide()">
             </div>
             <div class="formEl fieldtype-checkbox required" dataname="listGroups" data-validation-type="1" data-label="Lists" style="display: none; width: 100%;">
                 <h3>Lists<span class="indicator required">*</span></h3>
@@ -228,9 +257,9 @@
                 </div>
             </div>
             <div class="submit-container">
-                <input type="submit" value="Submit" class="btn btn-submit">
+                <input type="submit" value="Submit" id="hdrSubmit" class="btn btn-submit">
             </div>
-            <div id='formMessage' class="bg-danger" >
+            <div id='hdrFormMessage' class="bg-danger" >
                 <p style="color:white"><b>message</b></p>
             </div>
         </div>
