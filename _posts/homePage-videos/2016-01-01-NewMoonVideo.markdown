@@ -4,7 +4,7 @@ title: New Moon in Aquarius 2017
 subtitle: null
 layout: homePage
 modal-id: 4
-date: {}
+date: 2014-07-15
 img: treehouse.png
 YouTubeTag: vcUs2TaBym8
 thumbnail: treehouse-thumbnail.png
