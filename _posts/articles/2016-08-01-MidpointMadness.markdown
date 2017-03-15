@@ -2,7 +2,7 @@
 title: Midpoint Madness and the Orlando Massacre
 subtitle: Exploring Mars, Saturn, Pluto Combinations
 layout: article
-date: 2016-08-01
+date: 2017-02-06
 layout: article
 type: article
 category: article

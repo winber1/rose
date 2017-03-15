@@ -1,18 +1,19 @@
 ---
 title: The Astrology of Pregnancy
 layout: article
-date: 2016-03-01
+date: 2017-02-09
 layout: article
 type: article
 category: article
 tags: none
-thumbnail: img/articles/pregnancy.png
+thumbnail: img/articles/CancerFacbk.jpg
 description: What do you say to a woman who asks you to look at her horoscope to see if a pregnancy is in her future? Often stressed and anxious, she inquires emotionally, “Will I have a baby? And if so, when?”
 
 ---
 <a href="../../../../../img/articles/215-TMArose.pdf">View pdf version of the file</a><br>
 by Kathy Rose
 
+<img style="float:left; width:25%; margin:0px 15px 10px 0px; box-sizing:content-box;" src='../../../../../img/articles/preganancy2.jpg'>
 <b>What do you say to a woman
 who asks you to look at her
 horoscope to see if a pregnancy

@@ -2,12 +2,12 @@
 title: Saturn and Guilt
 subtitle: Management of Measurement Constructs
 layout: article
-date: 2016-05-04
+date: 2017-02-02
 layout: article
 type: article
 category: article
 tags: none
-thumbnail: img/articles/blank2.png
+thumbnail:
 description: In my practice, I've noticed that Saturn in hard aspect to the Sun or Moon in the natal chart can dramatically signal sensitivity to feeling guilt; to taking on responsibility for things which are out of one's control.
 
 ---

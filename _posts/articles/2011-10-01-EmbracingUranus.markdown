@@ -1,18 +1,19 @@
 ---
 title: Embracing the Adventure of a Uranus Cycle
-subtitle: published in the Mountain Astrologer Magazine
+subtitle:
 layout: article
-date: 2011-10-01
-layout: article
+date: 2017-02-08
 layout: article
 type: article
 category: article
 tags: none
+thumbnail: img/articles/AquarFbook.jpg
 description: Have you ever experienced a small electric shock, giving you that sharp jolt of energy that causes you to jump? No doubt you have. You know how it energizes your senses and snaps your attention fully into the moment, so that you're completely aware and alert. That sudden, shocking surprise triggers a sensorial rush, while your adrenaline surges because of the zap coming out of the blue.
 
 ---
-The following articles were published in The Mountain Astrologer Magazine.
+<b>The following article was published in The Mountain Astrologer Magazine.</b>
 
+<img style="float:left; width:20%; margin:8px 15px 5px 0px;" src='../../../../../img/articles/AquarFbook.jpg'>
 Have you ever experienced a small electric shock, giving you that sharp jolt of energy that causes you to jump? No doubt you have. You know how it energizes your senses and snaps your attention fully into the moment, so that you're completely aware and alert. That sudden, shocking surprise triggers a sensorial rush, while your adrenaline surges because of the zap coming out of the blue.
 
 We feel a similar thrill when we ride a roller coaster — especially when we're riding it for the first time, and we don't know the track's course. In this thrill of adventure, there is an "in the moment" awareness as we deal with sharp turns, sudden steep drops, and upside-down spins through breathtaking 360-degree loops. The special excitement, the tingling sensation we feel, comes from the sensory stimulation and even the sense of danger. 
