@@ -926,3 +926,9 @@ iframe {
 }
 
 section{ padding:50px; }
+
+@media(min-width:845px) {
+    .img-responsive {
+        max-wdith: 25%;
+    }
+}

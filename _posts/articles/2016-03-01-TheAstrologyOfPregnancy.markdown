@@ -279,7 +279,7 @@ of data collection for the cycles that
 were going on when the women were
 carrying babies in their bellies.
 
-<img src='../../../../../img/articles/TAOP_Chart1.jpg'>
+<img src='../../../../../img/articles/TAOP_Chart1.jpg' style="float:left; width:95%; margin:0px 15px 10px 0px; box-sizing:content-box;">
 
 <p></p><br>
 <h5>Research Parameters</h5>
@@ -651,7 +651,7 @@ she ever had in all her life. Again, we
 see the benefic Jupiter solar arc shining
 through!
 
-<img src='../../../../../img/articles/TAOP_Chart2.jpg'>
+<img src='../../../../../img/articles/TAOP_Chart2.jpg' style="float:left; width:95%; margin:0px 15px 10px 0px; box-sizing:content-box;">
 
 I suspect that we’d see activity to
 her angles, if we had her birth time.
@@ -769,7 +769,7 @@ pregnant!
 We’ll explore the Venus energy
 next.
 
-<img src='../../../../../img/articles/TAOP_Chart3.jpg'>
+<img src='../../../../../img/articles/TAOP_Chart3.jpg' style="float:left; width:95%; margin:0px 15px 10px 0px; box-sizing:content-box;">
 
 
 <p></p><br>
@@ -884,7 +884,7 @@ Ascendant = Jupiter, Sun = Jupiter,
 and Moon = Jupiter.
 
 
-<img src='../../../../../img/articles/TAOP_Chart4.jpg'>
+<img src='../../../../../img/articles/TAOP_Chart4.jpg' style="float:left; width:95%; margin:0px 15px 10px 0px; box-sizing:content-box;">
 
 <p></p><br>
 <h5>6. Saturn</h5>
@@ -1062,7 +1062,7 @@ Astrologer, Aug./Sept. 2013.</ul>
 <i>© 2015 Kathy Rose – all rights reserved</i>
 <p></p><br>
 
-<img src='../../../../../img/articles/KathyRose2.jpg' >
+<img src='../../../../../img/articles/KathyRose2.jpg' style="float:left; width:25%; margin:0px 15px 10px 0px; box-sizing:content-box;">
 <br clear='left'>
 
 <i><b>Kathy Rose</b> is an astrologer with an international
