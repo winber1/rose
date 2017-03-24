@@ -13,11 +13,11 @@ title: Articles
            {% for post in site.posts %}
                 {% if post.type == 'article' %}
                     {% if post.thumbnail %}
-                        <img class="img-responsive" style="float:left; height:100px; width:100px; margin:4px 15px 15px 15px;" src=/rose/{{ post.thumbnail }} alt="">
+                        <img class="img-responsive" style="float:left; height:100px; width:100px; margin:4px 15px 15px 15px;" src=/{{ post.thumbnail }} alt="">
                     {% endif %}
                 {{ post.publish-date }}
-                 <h3><a href="/rose{{ post.url }}">{{ post.title }}</a></h3>
-                 {{ post.description }}<b><a href="/rose{{ post.url }}">&nbsp;&nbsp;more...</a></b>
+                 <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                 {{ post.description }}<b><a href="{{ post.url }}">&nbsp;&nbsp;more...</a></b>
              
             <hr>
                 {% endif %}
