@@ -10,7 +10,7 @@
                     <span class="icon-bar"></span>
                 </button>
          
-       <a class="navbar-brand page-scroll" href="/">{{site.title}}</a>
+       <a class="navbar-brand page-scroll" href=>"{{site.title | prepend: site.baseurl }}"</a>
 
             </div>
 
@@ -21,12 +21,12 @@
 {% if page.url == '/' %}
 {% assign path_name = "" %}
 {% else %}
-{% assign path_name = "/" %}
+{% assign path_name = site.baseurl | append: "/" %}
 {% endif %}
                     
                     {% if page.url != '/' %}
                     <li id="HomeId">
-                        <a class="page-scroll" href="/">Home</a>
+                        <a class="page-scroll" href="{{site.baseurl | append: "/"}}">Home</a>
                     </li>
                     {% endif %}
                     
