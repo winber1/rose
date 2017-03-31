@@ -1,9 +1,9 @@
 url: https://y7kim.github.io
 # works for local and gh-pages:
-baseurl: /rose  
+#baseurl: /rose  
     
-# remove baseurl - works for roseastrology.com
-
+# works for roseastrology.com
+baseurl: "." 
 
 # Site settings
 title: Kathy Rose Astrology
