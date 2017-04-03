@@ -22,7 +22,7 @@ title: Articles
                         <img class="img-responsive" style="float:left; height:100px; width:100px; margin:4px 15px 15px 15px;" src={{ post.thumbnail  | prepend: path_name }} alt="">
                     {% endif %}
                 {{ post.publish-date }}
-                 <h3><a href="{{ post.url | prepend: site.path_name }}">{{ post.title }}</a></h3>
+                 <h3><a href="{{ post.url | prepend: path_name }}">{{ post.title }}</a></h3>
                  {{ post.description }}<b><a href="{{ post.url | prepend: path_name }}">&nbsp;&nbsp;more...</a></b>
              
             <hr>
