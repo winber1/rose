@@ -1,5 +1,10 @@
 url: https://y7kim.github.io
-baseurl: /rose
+
+# works for dev (http://127.0.0.1:4000/rose/)
+#baseurl: /rose  
+    
+# works for prod (roseastrology.com)
+baseurl: "." 
 
 # Site settings
 title: Kathy Rose Astrology
