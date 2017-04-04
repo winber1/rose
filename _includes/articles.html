@@ -19,13 +19,13 @@
             
                         <li>
                             <div class="timeline-image">
-                                <img class="img-responsive" style="float:left; height:100px; width:100px; margin:8px 15px 15px 15px;" src={{ post.thumbnail }} alt="">
+                                <img class="img-responsive" style="float:left; height:100px; width:100px; margin:8px 15px 15px 15px;" src={{ post.thumbnail | prepend: site.baseurl}} alt="">
                             </div>
                         
           
                             <div>
-                                <h4  class="service-heading"><a href="/rose{{ post.url }}">{{ post.title }}</a></h4>
-                                <p class="text-muted">{{ post.description }}&nbsp;&nbsp; <b><a href="/rose{{ post.url }}">more...</a></b>
+                                <h4  class="service-heading"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
+                                <p class="text-muted">{{ post.description }}&nbsp;&nbsp; <b><a href="{{ post.url | prepend: site.baseurl }}">more...</a></b>
                 </p><br clear="all">
                             </div>
                         </li>
@@ -34,7 +34,7 @@
                     {% endfor %}  </ul>  <br>     
                     
                 
-            <h4 class="service-heading"><a href="/rose/articles/">more articles...</a></h4>
+            <h4 class="service-heading"><a href="articles/">more articles...</a></h4>
             </div></div>
         </div>
     </section>
