@@ -8,7 +8,12 @@
 
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}">
+    {% if page.url == '/' or site.baseurl == "." %}
+        {% assign path_name = "" %}
+    {% else %}
+        {% assign path_name = site.baseurl %}
+    {% endif %}
+    <link rel="stylesheet" href="{{ "/style.css" | prepend: path_name }}">
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="{{ "/css/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">

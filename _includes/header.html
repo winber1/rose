@@ -18,7 +18,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
         
-{% if page.url == '/' %}
+{% if page.url == '/' or site.baseurl == "." %}
 {% assign path_name = "" %}
 {% else %}
 {% assign path_name = "/rose/" %}
@@ -26,7 +26,7 @@
                     
                     {% if page.url != '/' %}
                     <li id="HomeId">
-                        <a class="page-scroll" href="/rose/">Home</a>
+                        <a class="page-scroll" href="{{path_name}}/">Home</a>
                     </li>
                     {% endif %}
                     
