@@ -6,7 +6,7 @@ layout: article
 type: article
 category: article
 tags: none
-thumbnail: img/articles/CancerFacbk.jpg
+thumbnail: /img/articles/CancerFacbk.jpg
 description: What do you say to a woman who asks you to look at her horoscope to see if a pregnancy is in her future? Often stressed and anxious, she inquires emotionally, “Will I have a baby? And if so, when?”
 
 ---

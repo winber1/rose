@@ -10,23 +10,24 @@
                     <span class="icon-bar"></span>
                 </button>
          
-       <a class="navbar-brand page-scroll" href="/">{{site.title}}</a>
+       <a class="navbar-brand page-scroll" href="/">{{site.title | prepend: site.baseurl }}</a>
 
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
+            <!-- diag: page.url:{{page.url}}: path_name:{{path_name}}: site.baseurel:{{site.baseurl}}: -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
         
-{% if page.url == '/' %}
+{% if page.url == '/' or site.baseurl == "." %}
 {% assign path_name = "" %}
 {% else %}
-{% assign path_name = "/" %}
+{% assign path_name = site.baseurl %}
 {% endif %}
                     
                     {% if page.url != '/' %}
                     <li id="HomeId">
-                        <a class="page-scroll" href="/">Home</a>
+                        <a class="page-scroll" href="{{path_name}}/">Home </a>
                     </li>
                     {% endif %}
                     
@@ -34,19 +35,19 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="{{path_name}}#consultations">Consultations</a>
+                        <a class="page-scroll" href="{{path_name}}/#consultations">Consultations</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="{{path_name}}#videos">Monthy Videos</a>
+                        <a class="page-scroll" href="{{path_name}}/#videos">Monthy Videos</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="{{path_name}}#articles">Published Articles</a>
+                        <a class="page-scroll" href="{{path_name}}/#articles">Published Articles</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="{{path_name}}#about">My Story</a>
+                        <a class="page-scroll" href="{{path_name}}/#about">My Story</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="{{path_name}}#contact">contact</a>
+                        <a class="page-scroll" href="{{path_name}}/#contact">contact</a>
                     </li>
                 
                 </ul>

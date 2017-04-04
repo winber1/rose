@@ -6,7 +6,7 @@ date: 2017-02-07
 layout: article
 type: article
 category: article
-thumbnail: img/articles/Pisces2.jpg
+thumbnail: /img/articles/Pisces2.jpg
 description: Have you ever become assertive and energized when talking about Mars transits? Or wild and adventurous when discussing Uranus? When you look at your own horoscope cycles or those of your clients, does your behavior begin to resonate with the planetary signature energies?
 
 ---
