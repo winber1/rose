@@ -1,4 +1,10 @@
 <!-- Navigation -->
+{% if page.url == '/' or site.baseurl == "." %}
+{% assign path_name = "" %}
+{% else %}
+{% assign path_name = site.baseurl %}
+{% endif %}
+
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -10,7 +16,7 @@
                     <span class="icon-bar"></span>
                 </button>
          
-       <a class="navbar-brand page-scroll" href="/rose/">{{site.title}}</a>
+       <a class="navbar-brand page-scroll" href="{{path_name}}/">{{site.title}}</a>
 
             </div>
 
@@ -18,11 +24,6 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
         
-{% if page.url == '/' or site.baseurl == "." %}
-{% assign path_name = "" %}
-{% else %}
-{% assign path_name = "/rose/" %}
-{% endif %}
                     
                     {% if page.url != '/' %}
                     <li id="HomeId">
@@ -34,19 +35,19 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="{{path_name}}#consultations">Consultations</a>
+                        <a class="page-scroll" href="{{path_name}}/#consultations">Consultations</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="{{path_name}}#videos">Monthy Videos</a>
+                        <a class="page-scroll" href="{{path_name}}/#videos">Monthy Videos</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="{{path_name}}#articles">Published Articles</a>
+                        <a class="page-scroll" href="{{path_name}}/#articles">Published Articles</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="{{path_name}}#about">My Story</a>
+                        <a class="page-scroll" href="{{path_name}}/#about">My Story</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="{{path_name}}#contact">contact</a>
+                        <a class="page-scroll" href="{{path_name}}/#contact">contact</a>
                     </li>
                 
                 </ul>
