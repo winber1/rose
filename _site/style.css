@@ -303,9 +303,9 @@ header {
     background-attachment: scroll;
     background-image: url(img/header_roseastrology.jpg);
     
-    background-position: center center;
-    /* 4/15/16 we: keep background on top ??? */
-    background-position: top right;
+    background-position: top center;  // this works
+    //background-position: center top; 
+  
     
     //background-repeat: none;
     /* 4/15/16 we: this works better */
@@ -322,10 +322,16 @@ header {
     -o-background-size: contain;
 }
 
+/* Don't cover header gfx with menu for small media - we 4/17/17 */
+.menu-displace{
+    background-position: center 57px;
+}
+
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
 }
+
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
@@ -357,6 +363,11 @@ header .intro-text .intro-heading {
         padding-top: 0px;
         padding-bottom: 30vw;
         
+    }
+    
+    /* Don't cover header gfx with menu for small media - we 4/17/17 */
+    .menu-displace{
+        background-position: center top;
     }
 
     header .intro-text .intro-lead-in {
@@ -715,9 +726,9 @@ section#contact {
     background-image: url(img/ftr_background.jpg);
     background-repeat: no-repeat;
     
-    background-position: center center;
+    background-position: center center;  we 4/17/17
     /* 4/15/16 we: keep background on top ??? */
-    background-position: top left;
+//    background-position: top left;    we 4/17/17
     
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -937,6 +948,10 @@ section{ padding:50px; }
 @media(min-width:845px) {
     .img-responsive {
         max-wdith: 25%;
+    }
+@media(min-width:600px) {
+    .img-responsive {
+        max-wdith: 1%;
     }
 }
 

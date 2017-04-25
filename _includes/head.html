@@ -1,6 +1,6 @@
 <head>
     
-    {% if page.url == '/' or site.baseurl == "." %}
+    {% if site.baseurl == "." %}
         {% assign path_name = "" %}
     {% else %}
         {% assign path_name = site.baseurl %}

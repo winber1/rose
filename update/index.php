@@ -1,16 +1,172 @@
+<?php
+
+$xmlfile = "kathyRoseAdmin/index.xml"; /* xml file to read */
+$filename = "indexTest.html";  	/* file that is generated */
+
+$newMoonSign = $newMoonYear = $newMoonURL = $insightMonth = $insightYear = $insightURL = "";
+$message = "";
+
+$params = array();
+$params = simplexml_load_file($xmlfile);
+
+
+if ($_SERVER["REQUEST_METHOD"] == "POST")
+{
+  	$newMoonSign  = test_input($_POST["newMoonSign"]);
+  	$newMoonYear  = test_input($_POST["newMoonYear"]);
+  	$newMoonURL   = test_input($_POST["newMoonURL"]);
+  	$insightMonth = test_input($_POST["insightMonth"]);
+  	$insightYear  = test_input($_POST["insightYear"]);
+	$insightURL   = test_input($_POST["insightURL"]);
+}
+else
+{
+	$newMoonSign  = $params[0]->newMoonSign;
+	$newMoonYear  = $params[0]->newMoonYear;
+	$newMoonURL   = $params[0]->newMoonURL;
+	$insightMonth = $params[0]->insightMonth;
+	$insightYear  = $params[0]->insightYear;
+	$insightURL   = $params[0]->insightURL;
+}
+
+function test_input($data)
+{
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+
+?>
+
+<style>
+.input
+{
+    padding: 5px;
+    /* border: 1px solid #0000ff; */
+    height: auto;
+    width: 50px;
+    background-color:red;
+}
+.frame
+{ 	width: auto;
+padding: 1px;
+/* border: 1px solid red; */
+float: left;
+margin-left:2px;
+}
+.label
+{
+width: 100px;
+/* border: 1px solid green; */
+font-size: 14px;
+font-weight: bold;
+
+}
+
+.div1
+{
+/* border: 1px solid yellow; */
+float: left;
+height:100%;
+}
+
+.div1a
+{
+/* border: 1px solid yellow; */
+float: left;
+margin-left:25px;
+height:100%;
+}
+
+.div2
+{
+background-color:gray;
+padding:12px;
+height:80px;
+/* border: 1px solid white; */
+}
+
+.message
+{
+	color: red;
+	font-weight: bold;
+	font-size:12px;
+}
+
+.passwd
+{
+	font-size:10px; font-weight:normal; height:16px;
+}
+
+</style>
+
+
+<div class='div2'>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+
+<div class="div1">
+<div class='label'>New Moon</div>
+<div class='frame'>
+Sign: <input type="text" name="newMoonSign" size='15' value='<? echo $newMoonSign ?>'>
+</div>
+<div class='frame'>
+Year:
+<input type="text" name="newMoonYear" maxlength='4' size='4' value='<? echo $newMoonYear ?>'>
+</div>
+<div class='frame'>
+YouTube:
+<input type="text" name="newMoonURL" size='15' value='<? echo $newMoonURL ?>'>
+</div></div>
+
+
+<div class="div1a">
+<div class='label'>Insight</div>
+<div class='frame'>Month: <input type="text" name="insightMonth" size='15' value='<? echo $insightMonth ?>'>
+</div>
+<div class='frame'>Year:
+<input type="text" name="insightYear" maxlength='4' size='4' value='<? echo $insightYear ?>'>
+</div>
+<div class='frame'>YouTube:
+<input type="text" name="insightURL" size='15' value='<? echo $insightURL ?>'>
+</div>
+</div>
+<div class="div1a">
+
+<input type="submit" name="submit" value="Try It">
+
+
+<div class='frame'>
+<span class="passwd">Password:</span><br><span class="message">
+<?php echo $message;?></span>
+<input type="password" name="passwd" size='14'>
+</div>
+
+
+<input type="submit" name="submit" value="Publish">
+
+</div>
+
+</form>
+</div>
+
+
+<?
+$HTMLform = <<<HTMLhead
+  <h1> form here </h1>
+HTMLhead; 
+
+$HTMLhead = <<<HTMLhead
 <!DOCTYPE html>
 <html>
-
   <head>
-    
-    
-    
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Appreciating Aries Energy in Women</title>
+    <title>Kathy Rose Astrology</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
-    <link rel="canonical" href="https://y7kim.github.io/article/2017/02/05/AppreciatingAriesEnergy/">
+    <link rel="canonical" href="https://y7kim.github.io/">
 
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
@@ -33,8 +189,7 @@
 </head>
 
 
-
-    <body id="page-top">
+    <body id="page-top" class="index">
 
     <!-- Navigation -->
 
@@ -58,13 +213,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
         
-                    
-                    
-                    <li id="HomeId">
-                        <a class="page-scroll" href="/">Home</a>
-                    </li>
-                    
-                    
+               
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
@@ -99,204 +248,457 @@
             </div>
         </div>
     </header>
-<!--
-        
-          <a class="page-link" href="./articles/">Articles</a>
-        
-          <a class="page-link" href="./blog/">Blog</a>
-        
-          <a class="page-link" href="./charts/">Charts</a>
-        
-          
-        
-          
-        
-          
-        
-          <a class="page-link" href="./videos/">Forecast Videos</a>
-        
- -->
 
-
-   
-   <section id='singlepage'>
-  <div class="container">
-    <div class="col-lg-8 col-lg-offset-2">
-      <h2>Appreciating Aries Energy in Women</h2>
-      <h3></h3>
-      <img style="float:left; width:20%; margin:8px 15px 5px 0px;" src='../../../../../img/articles/Aries.jpg'>
-<p>I am a female with Moon in Aries. I also have a prominent Mars in Taurus, sitting right on the Ascendant in strong aspect to Jupiter and Uranus. I am highly attuned with and inclined to warrior energy, competition, independence and enthusiasm.</p>
-
-<p>Can I say that I always receive love and approval and appreciation for being a strong and gutsy woman? No.</p>
-
-<p>Have I had my share of moments when I questioned whether I should be more passive, less forceful and less impatient, more traditionally feminine? Absolutely!</p>
-
-<p>Do I realize that I used “I” eight times in the three previous paragraphs? Of course...with enthusiasm! (How very Aries-like!)</p>
-
-<p>So, charge ahead with me and explore the struggles and challenges, as well as the opportunities for liberation and growth, that women with strong Aries energy often face.</p>
-
-<p>Aries is the first sign in the zodiac - how wonderfully appropriate for those who relish being first. This fire sign is associated with leadership, independence and assertiveness. Ruled by Mars, Aries is raw, primal energy - instinctive, gritty, courageous and competitive. It is the warrior, the conqueror archetype - eager to face challenges and motivated to push to new levels of personal excellence.</p>
-
-<p>Aries carries the vibration of “I am”. Self-discovery is the purpose inherent in this sign. Because of this, there is high emphasis on protecting one’s independence and self-reliance. This is expressed through quick reactions, elevated physical instinct and unrelenting competitive drive. Aries promotes a direct and to-the-point approach to life, charging forward fearlessly - always ready to lead and conquer.</p>
-
-<p>If you have Sun in Aries, you will resonate with this description. With the Sun, this dynamic and fiery Aries power fuels you and supplies you with the energy to express yourself boldly into the world. It is the spark that passionately drives and sustains your ego and sense of self.</p>
-
-<p>If you have Moon in Aries, the warrior and leadership vibrations are connected to your reigning needs and what you must do to feel nourished and fulfilled. You NEED to assert yourself and to be independent and courageous. You NEED to be a trailblazer and meet challenges head-on. (1) These actions and activities are necessary for you to have a sense of happiness, satisfaction and completion. Expressing yourself in this way is like consuming a gourmet meal for the soul.</p>
-
-<p>More often than not, these Martian energies work well if you are male. Bold and assertive men who exhibit high ambition to succeed or who have a strong drive for leadership are generally admired and rewarded. Society naturally embraces the heroic, competitive male paradigm. Men with Sun or Moon in Aries can find several male role models in history and myth who have positive connotations, like Sir Lancelot, Hercules and champion cyclist Lance Armstrong. For men, expressing the Mars-ruled Aries energy is uncomplicated and straightforward. This makes sense, as both Aries and Mars have masculine polarities. There is a natural affinity.</p>
-
-<p>However. if you are a woman and have Sun or Moon in Aries, there are fewer female warriors as examples or role models. Assertive women who are also competitive seem to receive more criticism and disapproval. Women who have strong opinions and are obviously ambitious or who operate in positions of authority are often referred to as “bossy”, “cold” or “pushy”. The Aries energy is not always as easy for a woman to embrace and express because it is in conflict with the gentle, nurturing sensitivity of traditional femininity.</p>
-
-<p>Many women with strong Aries planets, including me, struggle with integrating and expressing their warrior nature. In my astrology practice, I frequently hear women clients say that they fear they’re being selfish, egotistical and self-centered when they are being assertive, ambitious and competitive. They worry that they will be judged and disliked - that when they exhibit the exact same behavior as men, it will be interpreted differently...and negatively. The social programming for women to sacrifice their needs and desires and to put others first is pervasive. Speaking up and directly asking for what you want is all-too-often not considered feminine.</p>
-
-
-
-<p></p><br>
-<h5>ARIES, MARS AND VENUS</h5>
-<p>Dr. Deborah Tannan wrote a brilliant book about the differences women and men have in their conditioning and programming, and how that affects their conversations with each other. What Dr. Tannen describes is the basic expression of Mars and Venus, the planets that symbolize masculinity and femininity.</p>
-
-<p>In her book, “You Just Don’t Understand”, (2) she mentions that women are not socialized in such a way that emphasizes competition; instead they focus on intimacy and connection. They are taught to cooperate instead of to compete. Their orientation (especially with each other) is linked to achieving a sense of community and support. They tend to minimize differences with one another and will avoid appearances of superiority.</p>
-
-<p>Men, on the other hand, are socialized in such a way that emphasizes independence, power and accomplishment. Status and hierarchy play a key role in men’s relationships. They are motivated by keeping the upper-hand and view many situations as a contest.</p>
-
-<p>On pages 43-44 of her book, Dr. Tannan asserts,“boys tend to play outside, in large groups that are hierarchically structured. Their groups have a leader who tells others what to do and how to do it, and resists doing what other boys propose. Boys’ games have winners and losers and elaborate systems of rules that are frequently the subjects of arguments. Finally, boys are frequently heard to boast of their skill and argue about who is best at what.”</p>
-
-<p>“Girls, on the other hand, play in small groups or in pairs; the center of a girl’s social life is a best friend. Within the group, intimacy is key: Differentiation is measured by relative closeness. Many of their activities (such as playing house) do not have winners or losers. Though some girls are certainly more skilled than others, girls are expected not to boast about it, or show that they think they are better than the others. Girls don’t give orders; they express their preferences as suggestions, and suggestions are likely to be accepted. Whereas boys say, “Gimme that!’ and “Get outta here!” girls say, “Let’s do this,” and “How about doing that?”</p>
-
-<p>What has been taught and handed down through generations of social programming, makes it much more acceptable for a boy to express the pure energy of Mars, just as it is easier for a girl to gain approval by radiating the graceful, gentle, accommodating energy of Venus. Whether it’s ideal or fair is for another article; the fact is, masculinity is linked to Mars and femininity to Venus.</p>
-
-<p></p><br>
-<h5>Venus Mars</h5>
-<ul>
-    <li>indirect and persuasive</li>
-    <li>direct and to-the-point</li>
-    <li>avoids appearance of superiority</li>
-    <li>heirarchical approach</li>
-    <li>cooperation</li>
-    <li>competition</li>
-    <li>seeks community, support and rapport</li>
-    <li>motivated to keep the upperhand</li>
-    <li>works for consensus and closeness</li>
-    <li>will rise to a challenge</li>
-    <li>minimizes differences with each other</li>
-    <li>status orientation</li>
-    <li>desires intimacy and connection</li>
-    <li>preserves</li>
-    <li>independence</li>
-</ul>
-
-<p>Former fashion model Tyra Banks (chart #1) has Moon and Mars in Aries and is described as having a straightforward approach to modeling with a spirited and vivacious personality. She was one of the first black fashion models to reach “supermodel” status, and the first black model to be on the covers of the Sports Illustrated Swimsuit Issue, GQ and the Victoria’s Secret catalog. Tyra admits to being very competitive, both with others and with herself - constantly pushing herself to new boundaries.</p>
-
-<p>Shortly after retiring from modeling, Banks used her strong Mars energy to fight back when tabloids turned on her, ridiculing her for some unflattering photos that were shot of her at bad angles after she had put on a few extra pounds. She defended herself in true Aries style by courageously coming out in her swimsuit on TV during her talk show, boldly demonstrating how even a supermodel’s body can look bad at certain angles. Her gutsy and feisty reaction to the critics landed her at the forefront of the debate of how skinny is too skinny, and how fat is too fat. She took an intense, challenging situation and dealt with it head-on.</p>
-
-<p>Ellen Degeneres (chart #2) also has Moon in Aries and is another example of a strong and courageous woman. In 1997 (3) when she came out of the closet, she became television’s first openly gay superstar. She asserts that she didn’t do it for a political agenda - she did it because she needed to be genuine and to live her truth. Her independence continued to show when she was asked to host the Oscars and refused to wear a dress. She said, “I just don’t feel comfortable in a dress. I don’t want to apologize for who I am”.</p>
-
-<p>Both Tyra Banks and Ellen Degeneres have indeed had their share of criticism. Tyra has been called egotistical and self-absorbed by some - all because she knows what she wants and fearlessly goes after it. Ellen triggered quite a reaction when she boldly told the world about her sexual orientation.</p>
-
-<p>For the most part, there is still the frequency of conflict surrounding a woman’s effort to step outside the social norm in expressing her femininity. Women who have a strong Mars or Aries quality in their horoscope have to learn to maneuver around these social hurdles in order to find full and satisfying expression of their nature.</p>
-
-<p>In preparation for this article, I interviewed many women with either Sun, Moon or Mars in Aries. I asked them how they express their warrior energy and how they feel it is received. I specifically asked them if they ever engage in competition, and if they do, in what manner? I was curious to hear their feedback on how it is to be a woman with Mars-oriented femininity.</p>
-
-<p>In the conversations I had, I found that it didn’t matter if the woman was a successful dynamo in the corporate world, or if she was a stay-at-home mom focusing on her family - they all had similar stories and feedback. The vast majority said that they frequently feel guilty about their competitive urges, as if having them were something to be ashamed of. In fact, many prefaced their stories with, “I’m embarrassed to say” or, “I’ve never really admitted this to anyone” or, “I know this makes me sound terrible”. I found it very interesting that again and again they would first apologize for having the strong desire to compete and to win.</p>
-
-<p>A successful corporate executive - we’ll call her “Mary” - sent me a letter describing how she feels about her Moon in Aries. She wrote, “I have always expressed my Aries energy and I thoroughly enjoy my competitive urges, although they mostly manifest in my work. I am not sure if you would call it going for the trophy but I know I can achieve where others have failed. Their failure seems to drive me to success and I will have my own way. This is not so much in my relationships, but certainly when I am working.”</p>
-
-<p>Mary continued, “There are many stories in my life that I could relate that describe how I demonstrate my warrior spirit. I am not physically competitive at all, but if someone wants to challenge me to a fight then I will fight and enjoy it and I am a nasty player. I am also very outspoken and really very indifferent to what anyone thinks about my actions or words. I cannot remember the last time I had regrets when I did or said something driven by my Aries Moon.”</p>
-
-<p>I enjoy these times, which is not something that I should really tell anyone, and once they are over I always ask myself should I have done anything differently and my conclusion is always the same. The answer is always no.”</p>
-
-<p>She concluded, “I know there are many people that probably dislike me, but equally I know there are those that have a lot of respect for me even if they do dislike me. In summary, I do feel the conflict and I do enjoy it.” That makes me sound terrible but it’s the truth.</p>
-
-<p>I can certainly relate to Mary’s feelings. When I shared with a female friend a very satisfying personal success I enjoyed in negotiating a new car purchase, I felt very uneasy afterward and wrestled with whether I should have “boasted” about the “victory”. Here’s what happened.</p>
-
-<p>I told my friend that because I had refused to back down from the salesman’s initial offers, I eventually got an incredible price on the vehicle and even managed to add some bonus items. I shared that I had been unrelenting and assertive, and that at the end of the deal, the male salesman was sweating profusely and almost in tears. When I recounted the experience, I blurted out how much fun the negotiation was - it was like going to battle, and I absolutely loved it!</p>
-
-<p>My husband was not with me when I struck the deal - he had to go to the dealership a few hours later and add his signature to the loan papers. The salesman sought him out and shook his hand saying, “Your wife is the toughest negotiator I’ve ever had!” When my husband told me that the salesman complimented me, I couldn’t stop smiling. It felt so good to unleash my Mars AND to get recognition, if not outright approval. I shared my story with full Aries enthusiasm.</p>
-
-<p>What was interesting was that a few hours after I recounted the events, I started to feel embarrassed and concerned that I sounded like some sort of maniac on a big ego trip. I wondered if my female friend thought I was bragging, instead of just being happy because I was feeling the power of Mars flowing through me. I fell into the trap of feeling like I had to apologize for savoring such a thrill from my victory in negotiation.</p>
-
-<p>This starkly illustrates what Dr. Tannan said about how women minimize differences with each other and avoid the appearances of superiority. In my unabashedly enthusiastic description of my victory, I was doing what men are accepted for - emphasizing my accomplishment and my feeling of power; and it triggered a programmed response of shame and embarrassment. It threatened to take the fire out my Aries Moon.</p>
-
-<p>These feelings change a pure and wonderful experience to one that is tainted and laced with emotional baggage. For many women, this stops them completely from manifesting their Aries power. Developing an awareness of this pattern of feeling shame and then striving to stop the apologies is certainly in order. In most circumstances, there is no reason women should feel bad about being powerful and expressing Mars assertively.</p>
-
-<p>One woman whom I interviewed has Mars in Aries opposite her Sun in Libra. She mentioned that when she was in her 20’s, she went to a female astrologer who told her that competition is associated with “the dark side”. She was affected and stifled by this pronouncement for nearly 20 years. Every time she felt the urge to engage in a contest, she felt bad about her tendencies. It took her until she was 40, just after the transit of Uranus opposite Uranus, to break through this and to gain a new awareness about her drive to compete. She realized that her desire to approach situations as if they were a contest wasn’t to make someone else a “loser”- it sprang from her passion to push herself to a new level of personal excellence. Even if she didn’t win, she benefited from the challenge, from the energy of an inspiring contest.</p>
-
-<p>Interestingly, many women I interviewed said that the negative feedback for their assertive and competitive natures comes mostly from other women. I have a good friend with Moon conjunct Mars in Aries who has constant feedback from women saying that she is intimidating, especially in the business world. She’s always perplexed and frustrated by this because her intention isn’t to intimidate. Her frustration is that in order to make her female colleagues happy, she feels she will have to become “someone else”. She is enormously friendly and outgoing, has a brilliant mind and verbal capacity, yet finds she is frequently not accepted by her own gender.</p>
-
-<p>The vast majority of the women I interviewed not only echoed this sentiment, they also mentioned that they tend to have more close male friends than female.</p>
-
-<p>I had an eye-opening experience several years ago when I was invited to join a neighborhood Bunko group - all women. Some of them had careers, some were homemakers; and they all were very feminine, in the Venus sort of way. I joined the group because I was told that Bunko was a dice game and that there were prizes to be won. I thought, “great!!”, I love to win prizes. Naturally, I approached the game with the desire and determination to win. I assumed that the other women would want to win also - why else play the game?</p>
-
-<p>Surprisingly, I found that the real purpose of the game was to socialize, connect and share stories. Most of the conversation centered on the women’s children or husbands. They did this while trying to play, which meant ultimately the score was never accurately recorded; and the game was pursued casually and halfheartedly. This was very frustrating to me - I felt like I was an alien from another planet. When I showed the least bit of impatience at having to wait for a story to end before we could continue to play, I would get dirty looks and disapproval; and it was particularly uncomfortable if I corrected the scorekeeper.</p>
-
-<p>Ultimately I had to quit the group. I found that I didn’t enjoy it, and I knew that they were not unhappy that I left. I suppose I should have anticipated this reaction. I continue to learn, since early in life, that my direct and assertive approach doesn’t always win points with other females.</p>
-
-<p>When I was 10 years old I had a situation with some boy bullies who decided it would be fun to tease me unmercifully because I was shy, very tall and incredibly skinny and gangly. They called me names and tormented me to no end. One day on the playground at school, I knew I couldn’t take it anymore, and I turned and confronted the boys. As they circled around me, taunting in unison, I grabbed the closest boy and hit him hard on the back. He collapsed, gasping for air because I had knocked the wind out of him. I thought he was dying! I was scared and really concerned.</p>
-
-<p>After he recovered, I was hauled off to the Principal’s office where I was taken to task for my actions. Word spread through the school and soon I found that almost all the girls were mad at me because the boy I had hit was the most popular guy in our grade. I had humiliated him in front of his friends, and they were never going to forgive me. I was summarily kicked out of the “girl club” because I forcefully defended myself.</p>
-
-<p>However, two girls did stick by my side, and we formed a deep friendship. It’s no surprise that one of them has Sun in Aries and one has Moon in Aries. They understood - at least some part of them did.</p>
-
-
-<p></p><br>
-<h5>Unexpressed Aries Energy Can Turn Into Anger</h5>
-
-
-<p>Barbara Ybarra, an astrologer in California, has Moon in Aries. She wrote to me with a very insightful idea - linking unexpressed Mars-type energy to Volcanos and the formation of lava tubes. She was responding to my asking her if she felt comfortable using her assertive, warrior energy. She said, “In a Volcano, if a fire burns underneath and gets big enough, it cannot be  easily controlled.  Previously, the Volcano “Kilauea” has used various lava tubes to vent the molten lava, but now there is so much heat and fire that it is threatening to come out the top as well.</p>
-
-<p>It's hard to look at how women experience their strong Aries planets without asking about the changes that women have gone through in society.  My mother also has Moon in Aries (conjunct Uranus), and she has Mars in Scorpio (and also Pluto square Sun)...so you see I grew up with an example of a woman who had energy trouble, and she lived in a more stifling time period.  She made her own lava tubes, venting all over the house, including her husband and children.  Sometimes the fire came out the top.</p>
-
-<p>I remember as a child saying I wanted to be a doctor when I grew up.  Then I changed it to architect after awhile.  One day my mother asked me why I chose jobs that were men's jobs, why not "nurse" or "teacher".  She talked about whom she hoped I would marry some day.  I was programmed and conditioned, even though I knew that other things were possible.  My warrior spirit and fearless drive was turning to anger, just like it did in her. </p>
-
-<p>It's the anger that people don't appreciate, and hidden anger is hard to get rid of.  I think feminine fire energy can be appreciated, but we very rarely see it in its purest form.  We see it when it has to come out, hell or high water...and by that time it is anger”. </p>
-
-<p>The image of a volcano with lava tubes to vent the excess heat is vivid and right on target. Many women create their own symbolic lava tubes so that they can vent their energy and assertive drive. For instance, many will store the aggressiveness and release it in the gym. This, naturally, lets them be less forceful in other areas of life and allows them to fit in with less conflict. Some will channel their Aries energy into keeping a spotless house or being a “supermom” - doing what women traditionally receive approval for, but doing it with the motive to be THE ABSOLUTE BEST.</p>
-
-<p>Others have put a lid on this strong energy completely, suppressing the urge to “win”, afraid to ask for what they want, becoming passive and giving away their power. When Mars is stuffed, an unhealthy situation develops, frequently leading to self-denial or self-destructive tendencies, even depression.</p>
-
-<p>Interestingly, quite a few of the women I interviewed who repressed the Aries assertiveness had allowed it instead to manifest as an eating disorder or other compulsion or addiction. Eventually, when the energy is repressed long enough, and too much heat builds, the lava comes bursting forth. The result is an out-of-control, ugly explosion that usually receives very negative feedback - which then reinforces the urge to stuff it; and then the cycle repeats and the inner heat builds up again.</p>
-
-<p>As was the case with my friend “Mary” and Ellen Degeneres, often there is a breakthrough for women at age 40, during the transit of Uranus opposite natal Uranus. Just as Mary had an awakening and was able to release the connection of competition being part of the “dark side”, many women feel a sense of liberation and freedom to express their inner warrior at this time. It’s fascinating that this often coincides with peri-menopause and major hormonal fluctuations. In fact, the number of interviewees who mentioned that menopause helped free the inner warrior was astounding. It’s as if they could finally give themselves permission to just “be themselves” without angst or fear of disapproval.</p>
-
-<p>With an awareness of these issues and a resolve to work through them, more Aries women should be able to embrace and honor their strong warrior and trailblazing personalities earlier than mid-life. Here are a few helpful pieces of advice for the young Aries woman:</p>
-
-<p>Keep in mind that there will inevitably be times when circumstances demand a modification or adjustment in how and when your powerful competitive warrior is released. The women with the most harmony and success in comfortably living as an Aries-type all say that they are mindful of when they are around people who will be blown away by, or will push back against, too much assertive drive. These women have created successful strategies to recognize and flow with such a situation - adapting as needed, but not giving away their power or apologizing for their personality.</p>
-
-<p>Develop a clear awareness of other people’s needs and feelings - we all recognize that this isn’t necessarily the strong point of the Aries temperment. It’s important to know that there’s no way to make everyone happy all the time - however, your mindful intention will radiate out into your aura and ultimately, you won’t ruffle as many feathers...including your own.</p>
-
-<p>Avoid comparing yourself to the traditional Venus-type of conventional femininity. Having a Mars-oriented femininity doesn’t make you less of a woman - it’s just that you engage life with a different style. Be clear about who you are. Accept the fact that you thrive on challenge and competition - smile and feel wonderful when you have achieved a new level of personal excellence.
-
-Love the part of you that needs to get right-to-the point in conversations - enjoy the efficiency in this. Relish your dynamic independence and fearlessness. This is so important - when you feel inner acceptance for being strong and gutsy, and when you are willing to moderate your assertiveness when needed, it radiates out into your life energy; and in the end, you will receive more love and support.</p>
-
-<p>And always remember - just as you want to be accepted for who you are - with your dynamic, assertive style -strive to afford other women who have a different style, the same spiritual courtesy.</p>
-
-</p>
-<br>
-<p> 
-
-    <b>Chart Data</b>
-<p><b>Tyra Banks</b> - December 4, 1973 7:13 pm pst Inglewood,CA Rodden rating AA: birth certificate</p>
-
-<p><b>Ellen Degeneres</b> - January 26, 1958 3:30 am cst<br>
-    Metairie, Louisiana Rodden rating C: caution, no source</p>
-
-</p>
-<br>
-<p>
-<b>Notes</b>
-<ol>
-<li> Noel Tyl has pioneered the “reigning need” theory related to the Moon sign.</li>
-
-<li> Dr. Deborah Tannen, Ph.D. “You Just Don’t Understand”: Women and Men in Conversation 
-Ballantine Books 1990</li>
-
-<li> Interesting that when Ellen Degeneres first announced to the world about her sexual orientation
-(Feb 1997- on “Opera” and April 1997 when the character on her show “came out”) transiting Jupiter and Uranus were conjunct her Sun in Aquarius, just 4 degrees shy of the Uranus - Uranus opposition (exact Feb 1998)</li>
-    </ol>
+    <!-- Services Section -->
+    <section id="services" style="padding: 50px 0px 0px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h4 class="service-heading">Consultations</h4>
+                    <p class="text-muted"><b>Intuitive Insight for Conscious Growth<br/>and Personal Development.</b><br/>
+For 35 years, I've had the privilege of working with many thousands of clients around the world to help them understand the guidance and the gifts revealed through their horoscopes. 
+In your 60-minute astrological consultation, we will explore the influences, tendencies, strengths and vulnerabilities suggested by your chart. In examining how the planetary placements and patterns are linked to your life purpose, we will discuss and determine strategies for opening opportunities and dealing with challenges as you seek personal fulfillment.<br/>
+Please <a href="mailto:roseastrology@yahoo.com?Subject=Schedule a Consultation">email</a> me at <a href="mailto:roseastrology@yahoo.com?Subject=Schedule a Consultation">roseastrology@yahoo.com</a> or call me at <b><span style="white-space: nowrap;">757-340-5516</span></b> to schedule your appointment.</p>
+                </div>
+               
+                <div class="col-md-4">
+                    <h4 class="service-heading">Monthly Videos</h4>
+                    <p class="text-muted">Every month, on my <a href="https://www.youtube.com/user/roseastrology" target="_blank">YouTube Channel</a>, you can watch new videos on the astrology forecast for that month. You can also see the energetic influences of the New Moon as it passes through the twelve signs of the Zodiac. Professionally produced and always free, these short videos are packed full of useful information and practical guidance to help you anticipate and integrate the important astrological patterns the month holds in store.</p>
+                    <p class="text-muted">Subscribe to my <a href="https://www.youtube.com/user/roseastrology" target="_blank">YouTube Channel</a><br /> by <a href="https://www.youtube.com/user/roseastrology" target="_blank">clicking here</a>.</p>
+                   
+                    
+                </div>
+                
+                 <div class="col-md-4">
+                    <h4 class="service-heading">Newsletter</h4>
+                    <p style="font-weight: bold;">Sign up for my Free Newsletter.</p>
+                   <div>
+
+                       <div>
+
+                           
+<form id="ic_signupform" method="POST" action="https://app.icontact.com/icp/core/mycontacts/signup/designer/form/?id=41&amp;cid=872462&amp;lid=7947">
+    <div class="elcontainer normal stacked left-aligned">
+        <div class="sortables">
+            <div class="formEl fieldtype-input required" id="hdrEmail" data-validation-type="1" data-label="Email" style="display: inline-block; width: 100%;">
+                <label>Email<span class="indicator required">*</span></label>
+                <input type="text" placeholder="" name="data[email]" onfocus="$('#hdrFormMessage').hide()">
+            </div>
+            <div class="formEl fieldtype-checkbox required" dataname="listGroups" data-validation-type="1" data-label="Lists" style="display: none; width: 100%;">
+                <h3>Lists<span class="indicator required">*</span></h3>
+                <div class="option-container">
+                    <label class="checkbox"><input type="checkbox" alt="" name="data[listGroups][]" value="14154" checked="checked">Rose Astrology Newsletter</label>
+                </div>
+            </div>
+            <div class="submit-container">
+                <input type="submit" value="Submit" id="hdrSubmit" class="btn btn-submit">
+            </div>
+            <div id='hdrFormMessage' class="bg-danger" >
+                <p style="color:white"><b>message</b></p>
+            </div>
+        </div>
+        <div class="hidden-container"></div>
     </div>
-  </div>
-</section>
-        
+</form>
+<img alt="" src="https://app.icontact.com/icp/core/signup/tracking.gif?id=41&amp;cid=872462&amp;lid=7947">
+</div></div></div></div> </div> </section>
+        <!-- Clients Aside -->
+    <aside class="clients ">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-1 col-xs-1">
+                   
+                        <img src="img/art/aries.jpg" class="img-responsive" alt="">
+                    
+                </div>
+                <div class="col-sm-1 col-xs-1">
+                  
+                        <img src="img/art/TarusFacbk.jpg" class="img-responsive" alt="">
+                  
+                </div>
+                <div class="col-sm-1 col-xs-1">
+                  
+                        <img src="img/art/gemini.jpg" class="img-responsive img-centered" alt="">
+                   
+                </div>
+                <div class="col-sm-1 col-xs-1">
+             
+                        <img src="img/art/CancerFacbk.jpg" class="img-responsive img-centered" alt="">
+                   
+                </div>
+                <div class="col-sm-1 col-xs-1">
+                    
+                        <img src="img/art/leo.jpg" class="img-responsive img-centered" alt="">
+                  
+                </div>
+                <div class="col-sm-1 col-xs-1">
+                 
+                        <img src="img/art/virgo.jpg" class="img-responsive img-centered" alt="">
+                   
+                </div>
+                <div class="col-sm-1 col-xs-1">
+                   
+                        <img src="img/art/libra.jpg" class="img-responsive img-centered" alt="">
+                 
+                </div>
+                <div class="col-sm-1 col-xs-1">
+                  
+                        <img src="img/art/ScorpioFacbk.jpg" class="img-responsive img-centered" alt="">
+                 
+                </div>
+                <div class="col-sm-1 col-xs-1">
+                   
+                        <img src="img/art/sag.jpg" class="img-responsive img-centered" alt="">
+                   
+                </div>
+                <div class="col-sm-1 col-xs-1">
+                   
+                        <img src="img/art/capricorn.jpg" class="img-responsive img-centered" alt="">
+                   
+                </div>
+                <div class="col-sm-1 col-xs-1">
+                  
+                        <img src="img/art/AquarFbook.jpg" class="img-responsive img-centered" alt="">
+                 
+                </div>
+                <div class="col-sm-1 col-xs-1   ">
+                   
+                        <img src="img/art/Pisces2.jpg" class="img-responsive img-centered" alt="">
+                  
+                </div>
+            </div>
+        </div>
+    </aside>
+HTMLhead;
+
+    
+$HTMLbeg = <<<HTMLbeg
+    <!-- Services Section -->
+    <section id="consultations" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Consultations</h2>
+                    <h3 class="section-subheading text-muted">Please <a href="mailto:roseastrology@yahoo.com?Subject=Schedule a Consultation">email</a> me at <a href="mailto:roseastrology@yahoo.com?Subject=Schedule a Consultation">roseastrology@yahoo.com</a> to schedule an appointment. <p>Or call <b>757-340-5516.</b> </p></h3>
+                </div>
+            </div>
+            <div class="row text-left">
+                <div class="col-md-12">            
+                    <h4 class="service-heading">Natal Astrology Consultation</h4>
+                    <img class="img-responsive" style="float: right; width:300px; margin:0px 0px 30px 30px;" src="img/art/Adventure.jpg" alt=""><p class="text-muted"> Identifying the astrological significance of the positions and relationships of the planets at the moment of your birth provides a wealth of information that, professionally interpreted, can offer invaluable insight into your past, present and future. </p>
+<p class="text-muted">Part of your 60-minute private consultation will be devoted to understanding your present situation, emotional patterns and relevant behaviors. We will discuss key astrological energies impacting your life now and how you can best use these planetary aspects to create a more supportive personal and professional environment for enhanced success. </p>
+<p class="text-muted">I will also project your planetary cycles and horoscope activity forward for the next 2-3 years. You’ll get an easy-to-understand, helpful, and uplifting picture of your life potential, as well as a look ahead to the major events, changes and opportunities as suggested by your horoscope. </p>
+<p class="text-muted">This consultation is a two-way discussion that's not only free of technical jargon but also rich with accessible insight and useful advice you can actually put into practice. Our interaction is very much a dialogue - you are invited to ask questions or seek clarifications at any time. </p>
+
+<p class="text-muted">Please <a href="mailto:roseastrology@yahoo.com?Subject=Schedule a Consultation">email</a> me at <a href="mailto:roseastrology@yahoo.com?Subject=Schedule a Consultation">roseastrology@yahoo.com</a> or call <b><span style="white-space: nowrap;">757-340-5516</span></b> to schedule an appointment, which is generally handled over the phone. </p>
+                    
+                    <p class="text-muted"> <b>Fee: $150 for 60 minutes</b><br/>
+                    
+Payment can be made by MasterCard or Visa, or by check (check must be received before the appointment). </p>
+ <p class="text-muted">&nbsp;</p>
+                    
+                    <h4 class="service-heading">Astrology for Newborns and Older Children</h4>
+                    <img class="img-responsive" style="float:left; width:150px; margin:5px 20px 10px 0px;" src="img/art/AngelJoy2.jpg" alt=""><p class="text-muted">An astrological analysis for a newborn or young child is a great gift for parents and can provide a unique understanding of the child's entry into the world, or what to expect in the early years and beyond.  </p>
+                    <p class="text-muted">This consultation focuses on identifying and explaining the reigning needs of the child as well as the basic nature and structure of their identity and development. A comprehensive understanding of the life purpose opportunities and issues will be discussed, along with strategies that will provide practical guidance and help steer the child toward success. </p>
+<p class="text-muted">This can be done by phone or in person with the parents, or provided electronically as a digital recording. </p>
+ 
+ <p class="text-muted"> <b>Fee: $150 for 60 minutes</b><br/>
+                    
+Payment can be made by MasterCard or Visa, or by check (check must be received before the appointment). </p>
+ <p class="text-muted">&nbsp;</p>
+                    <h4 class="service-heading">For Best Results </h4>
+                    <p class="text-muted">An accurate birth date, time and location (by city or town preferably) are very important in order for an astrological consultation to be most helpful. Generally, a birth time is available on your birth certificate. </p>
+                </div>             
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+HTMLbeg;
+
+/*
+$HTMLmid = "";
+
+$HTMLmid .= "<a href='http://www.youtube.com/watch?v=" . $newMoonURL . "'target='new'><br />";
+$HTMLmid .= "<strong>New Moon in " . $newMoonSign . " " . $newMoonYear . "</strong></a><br />";
+$HTMLmid .= "Here's Kathy Rose with the background you need to put your needs into focus.</p>";
+$HTMLmid .= "<iframe width='374' height='250' src='http://www.youtube.com/embed/" . $newMoonURL;
+$HTMLmid .= "' frameborder='0' allowfullscreen></iframe>";
+$HTMLmid .= "<p>&nbsp;</p><br />";
+
+$HTMLmid .= "<p><strong><a href='http://www.youtube.com/watch?v=" . $insightURL . "' target='new'>";
+$HTMLmid .= "Astrological Insights for " . $insightMonth . " " . $insightYear . "</a></strong><br />";
+$HTMLmid .= "What life-enhancing practices does the astrology of " . $insightMonth . " support? Find out in the latest forecast from Kathy Rose.</p>";
+$HTMLmid .= "<iframe width='374' height='250' src='http://www.youtube.com/embed/" . $insightURL . "' frameborder='0' allowfullscreen></iframe>";
+$HTMLmid .= "<p>&nbsp;</p>";
+*/
+
+$HTMLmid = "";
+$HTMLmid .=
+    '<!-- Portfolio Grid Section -->
+    <section id="videos">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Latest Monthly Videos</h2>
+                    
+                </div>
+            </div>
+            <div class="row">
+              <div style="display:flex; flex-wrap:wrap; justify-content:center;">        
+                
+                <div class="col-md-4 col-sm-6 portfolio-item" style="width:374px; margin:15px">                  
+                       
+                        <iframe width="374" height="250" src="https://www.youtube.com/embed/8g4t9S9kTdQ" frameborder="0" allowfullscreen></iframe>
+                      
+                    </a>
+                    <div style="text-align: center;">
+                        <h5>New Moon in Aries 2017</h4>
+                        <p class="text-muted"></p>
+                    </div>
+                </div>               
+                
+                <div class="col-md-4 col-sm-6 portfolio-item" style="width:374px; margin:15px">
+                                          
+                        <iframe width="374" height="250" src="https://www.youtube.com/embed/3sbMQMQmnlw" frameborder="0" allowfullscreen></iframe>
+                      
+                    </a>
+                    <div style="text-align: center;">
+                        <h5>Astrological Insights for April 2017</h4>
+                        <p class="text-muted"></p>
+                    </div>
+                </div>         
+            </div>
+                <br style="clear:left">
+            <h5>&nbsp;</h5> <h4 class="service-heading">Check out my <a href="https://www.youtube.com/user/roseastrology" target="_blank">YouTube channel...</a></h4><div style="font-weight:bold; width:35%;margin:0px; padding:0px;"><h3 class="section-subheading text-muted" style="line-height:150%;margin-bottom:0;">to see other original videos, including my popular series on The Rings You Wear as well as two videos on Cleansing and Charging Your Aura.</h3></div>
+            </div>           
+        </div>           
+    </section>';
+
+
+
+
+$HTMLend1 = <<<HTMLend1
+   <!-- Services Section -->
+    <section id="articles" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">My Published Articles</h2>
+                    <h3 class="section-subheading text-muted">A few of the more recent...</h3>
+                </div>
+            </div>
+            <div class="row text-left">
+                <div class="col-md-12">   
+                    <ul style="list-style-type: none;">
+     
+            
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-responsive" style="float:left; height:100px; width:100px; margin:8px 15px 15px 15px;" src=./img/articles/CancerFacbk.jpg alt="">
+                            </div>
+                        
+          
+                            <div>
+                                <h4  class="service-heading"><a href="./article/2017/02/09/TheAstrologyOfPregnancy/">The Astrology of Pregnancy</a></h4>
+                                <p class="text-muted">What do you say to a woman who asks you to look at her horoscope to see if a pregnancy is in her future? Often stressed and anxious, she inquires emotionally, “Will I have a baby? And if so, when?”&nbsp;&nbsp; <b><a href="./article/2017/02/09/TheAstrologyOfPregnancy/">more...</a></b>
+                </p><br clear="all">
+                            </div>
+                        </li> 
+            
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-responsive" style="float:left; height:100px; width:100px; margin:8px 15px 15px 15px;" src=./img/articles/AquarFbook.jpg alt="">
+                            </div>
+                        
+          
+                            <div>
+                                <h4  class="service-heading"><a href="./article/2017/02/08/EmbracingUranus/">Embracing the Adventure of a Uranus Cycle</a></h4>
+                                <p class="text-muted">Have you ever experienced a small electric shock, giving you that sharp jolt of energy that causes you to jump? No doubt you have. You know how it energizes your senses and snaps your attention fully into the moment, so that you're completely aware and alert. That sudden, shocking surprise triggers a sensorial rush, while your adrenaline surges because of the zap coming out of the blue.&nbsp;&nbsp; <b><a href="./article/2017/02/08/EmbracingUranus/">more...</a></b>
+                </p><br clear="all">
+                            </div>
+                        </li>
+             
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-responsive" style="float:left; height:100px; width:100px; margin:8px 15px 15px 15px;" src=./img/articles/Pisces2.jpg alt="">
+                            </div>
+                        
+          
+                            <div>
+                                <h4  class="service-heading"><a href="./article/2017/02/07/NavigatingNeptune/">Navigating through the Neptune Fog</a></h4>
+                                <p class="text-muted">Have you ever become assertive and energized when talking about Mars transits? Or wild and adventurous when discussing Uranus? When you look at your own horoscope cycles or those of your clients, does your behavior begin to resonate with the planetary signature energies?&nbsp;&nbsp; <b><a href="./article/2017/02/07/NavigatingNeptune/">more...</a></b>
+                </p><br clear="all">
+                            </div>
+                        </li>                   
+    
+                      </ul>  <br>     
+                    
+                
+            <h4 class="service-heading"><a href="articles/">more articles...</a></h4>
+            </div></div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" style="padding: 50px 0px 0px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">My Story</h2>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-responsive" src="img/about/ScorpioFacbk.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                            <h3>&nbsp;</h3>
+                                    <h4 class="subheading">I have been in love with astrology...</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">I have been in love with astrology - and all things metaphysical, really - since 3rd grade. After pestering my mom for an astrology book, she finally bought me Linda Goodman's Sun Signs. In reading and becoming immersed in that landmark work, I felt like I was remembering something I already knew…as though I had studied astrology in a previous life. It was an ancient art with which I had a wonderful feeling of familiarity and a craft that I have been honing ever since.<br/>
+                                        After graduating with Highest Honors in Noel Tyl's Master's Degree Certification Program in 2009, I developed and produced with my husband the 9 DVD Tyl MasterWork set, which has been sold worldwide. I am now Noel's teaching associate for the Master's course.
+
+</p><br/><p class="text-muted">
+Since becoming a full-time astrologer in 1983, I have interpreted tens of thousands of charts for clients in all walks of life all around the world.</p>
+                                </div>
+                            </div>
+                        </li>
+    <!--
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/freesoul.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                 
+                                    <h4 class="subheading">When I was 24...</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">
+
+When I was 24, I started my practice as a full-time astrologer and intuitive. I also met Pete Sanders, founder of Free Soul. Connecting with Free Soul gave me the methods and techniques to  advance my intuitive abilites.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                
+                                    <h4 class="subheading">I trained as a Free Soul instructor...</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">I trained as a Free Soul instructor  and began teaching other people to understand their own intuition. Since 1984, I have traveled all over the nation helping people activate their psychic senses "on command" and to realize their full soul potential. </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                  
+                                    <h4 class="subheading">It's been over twenty years...</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">It's been over twenty years since I started my astrology practice and began teaching Free Soul. I'm still enjoying every minute!</p>
+                                </div>
+                            </div>
+                        </li>
+                       < <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>Be Part
+                                    <br>Of Our
+                                    <br>Story!</h4>
+                            </div>
+                        </li>
+
+                    </ul>
+                    -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Clients Aside -->
+    <aside class="clients ">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-1 col-xs-1">
+                   
+                        <img src="img/art/aries.jpg" class="img-responsive" alt="">
+                    
+                </div>
+                <div class="col-sm-1 col-xs-1">
+                  
+                        <img src="img/art/TarusFacbk.jpg" class="img-responsive" alt="">
+                  
+                </div>
+                <div class="col-sm-1 col-xs-1">
+                  
+                        <img src="img/art/gemini.jpg" class="img-responsive img-centered" alt="">
+                   
+                </div>
+                <div class="col-sm-1 col-xs-1">
+             
+                        <img src="img/art/CancerFacbk.jpg" class="img-responsive img-centered" alt="">
+                   
+                </div>
+                <div class="col-sm-1 col-xs-1">
+                    
+                        <img src="img/art/leo.jpg" class="img-responsive img-centered" alt="">
+                  
+                </div>
+                <div class="col-sm-1 col-xs-1">
+                 
+                        <img src="img/art/virgo.jpg" class="img-responsive img-centered" alt="">
+                   
+                </div>
+                <div class="col-sm-1 col-xs-1">
+                   
+                        <img src="img/art/libra.jpg" class="img-responsive img-centered" alt="">
+                 
+                </div>
+                <div class="col-sm-1 col-xs-1">
+                  
+                        <img src="img/art/ScorpioFacbk.jpg" class="img-responsive img-centered" alt="">
+                 
+                </div>
+                <div class="col-sm-1 col-xs-1">
+                   
+                        <img src="img/art/sag.jpg" class="img-responsive img-centered" alt="">
+                   
+                </div>
+                <div class="col-sm-1 col-xs-1">
+                   
+                        <img src="img/art/capricorn.jpg" class="img-responsive img-centered" alt="">
+                   
+                </div>
+                <div class="col-sm-1 col-xs-1">
+                  
+                        <img src="img/art/AquarFbook.jpg" class="img-responsive img-centered" alt="">
+                 
+                </div>
+                <div class="col-sm-1 col-xs-1   ">
+                   
+                        <img src="img/art/Pisces2.jpg" class="img-responsive img-centered" alt="">
+                  
+                </div>
+            </div>
+        </div>
+    </aside>
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -375,7 +777,6 @@ Ballantine Books 1990</li>
 -->
         </div>
     </section>
-
 
       <footer>
         <div class="container">
@@ -1207,9 +1608,7 @@ Ballantine Books 1990</li>
             </div>
         </div>
     </div>
-
-
-    
+  
 
 <!-- jQuery Version 1.11.0 -->
     <script src="/js/jquery-1.11.0.js"></script>
@@ -1229,11 +1628,8 @@ Ballantine Books 1990</li>
     <!-- Custom Theme JavaScript -->
     <script src="/js/agency.js"></script>
 
-
 <!-- custom react file for YouTube component -->
 <script defer src="/js/bundle.js"></script>
-
-
 
 <script src="/js/icv_validation.js"></script>
 <script type="text/javascript" src="https://app.icontact.com/icp/static/form/javascripts/tracking.js"></script>
@@ -1453,3 +1849,47 @@ Ballantine Books 1990</li>
 
     </body>
 </html>
+HTMLend1;
+
+if( $_POST["submit"] == "Publish" )
+{
+	$message = "";
+
+	if($_POST["passwd"] == 'scorp29')
+	{
+
+		if (!$file = fopen($filename, 'w')) { echo "Cannot open file ($filename)"; exit; }
+
+		if (fwrite($file, $HTMLhead) === FALSE) { echo "Cannot write to file ($filename)"; exit; }
+        if (fwrite($file, $HTMLbeg) === FALSE) { echo "Cannot write to file ($filename)"; exit; }
+		if (fwrite($file, $HTMLmid) === FALSE) { echo "Cannot write to file ($filename)"; exit; }
+		if (fwrite($file, $HTMLend1) === FALSE) { echo "Cannot write to file ($filename)"; exit; }
+		fclose($file);
+
+		$params[0]->newMoonSign = $newMoonSign;
+		$params[0]->newMoonYear = $newMoonYear;
+		$params[0]->newMoonURL = $newMoonURL;
+		$params[0]->insightMonth = $insightMonth;
+		$params[0]->insightYear = $insightYear;
+		$params[0]->insightURL = $insightURL;
+
+		$params[0]->asXML($xmlfile);
+
+		$message = "Published " . date("m/d h:i");
+
+	}
+	else
+	{
+		if($_POST["passwd"] == "")
+		{ $message = "Password Required";}
+		else
+		{ $message = "Password Incorrect";}
+	}
+}
+
+echo $HTMLhead;
+echo $HTMLbeg;
+echo $HTMLmid;
+echo $HTMLend1;
+
+?>
