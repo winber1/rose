@@ -1,7 +1,7 @@
 <?php
 
 $xmlfile = "kathyRoseAdmin/index.xml"; /* xml file to read */
-$filename = "indexTest.html";  	/* file that is generated */
+$filename = "index.html";  	/* file that is generated */
 
 $newMoonSign = $newMoonYear = $newMoonURL = $insightMonth = $insightYear = $insightURL = "";
 $message = "";
@@ -101,7 +101,7 @@ height:80px;
 
 </style>
 
-
+<!--
 <div class='div2'>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
@@ -149,16 +149,70 @@ YouTube:
 
 </form>
 </div>
+-->
+
+<section id="updateForm">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                <form id="ic_signupform2" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+    <div class="elcontainer normal stacked" style="margin-right: auto;
+	margin-left: auto; ">
+        <div class="sortables">
+            <h2>New Moon</h2>
+            <div class="formEl fieldtype-input required" id="ftrEmail" data-validation-type="1" data-label="Email" style="display: inline-block; width: 100%;">
+                <label style="width: 5em;">Sign: </label> 
+                <input type="text" style="height: 3em; padding:0 .75em; width:60%; margin-bottom:3px;" placeholder="" type="text" name="newMoonSign" size='15' value='<? echo $newMoonSign ?>'><br />
+                <label style="width: 5em;">Year: </label> 
+                <input type="text" style="height: 3em; padding:0 .75em; width:60%; margin-bottom:3px;" placeholder="" name="newMoonYear" maxlength='4' size='4' value='<? echo $newMoonYear ?>'><br />
+                <label style="width: 5em;">YouTube: </label> 
+                <input type="text" style="height: 3em; padding:0 .75em; width:60%; margin-bottom:3px;" placeholder="" name="newMoonURL" size='15' value='<? echo $newMoonURL ?>'><br />
+            </div>
+        </div>
+            <div class="sortables">
+                <h2>Insight</h2>
+            <div class="formEl fieldtype-input required" id="ftrEmail" data-validation-type="1" data-label="Email" style="display: inline-block; width: 100%;">
+                <label style="width: 5em;">Sign: </label> 
+                <input type="text" style="height: 3em; padding:0 .75em; width:60%; margin-bottom:3px;" placeholder="" name="insightMonth" size='15' value='<? echo $insightMonth ?>'><br />
+                <label style="width: 5em;">Year: </label> 
+                <input type="text" style="height: 3em; padding:0 .75em; width:60%; margin-bottom:3px;" placeholder="" name="insightYear" maxlength='4' size='4' value='<? echo $insightYear ?>'><br />
+                <label style="width: 5em;">YouTube: </label> 
+                <input type="text" style="height: 3em; padding:0 .75em; width:60%; margin-bottom:3px;" placeholder="" name="insightURL" size='15' value='<? echo $insightURL ?>'><br />
+            </div>
+            <div class="sortables">
+                <label style="width: 5em;">Password: </label> 
+                <input type="text" style="height: 3em; padding:0 .75em; width:60%; margin-bottom:3px;" placeholder="" name="passwd" size='14'>
+            </div>
+            <div class="sortables">
+                <label>Message: <?php echo $message;?></label>
+            </div>
+                
+            <div class="submit-container">
+                <input type="submit" name="submit" value="Try It" class="btn btn-submit">
+                <input type="submit" name="submit" value="Pbulish" class="btn btn-submit">
+            </div>
+             <div id='ftrFormMessage' class="bg-danger" >
+                <p style="color:white"><b>message</b></p>
+            </div>
+        </div>
+        <div class="hidden-container"></div>
+    </div>
+</form>
+          </div>     
+        </div>
+    </div>
+</section>
 
 
 <?
-
-
-$HTMLhead = <<<HTMLhead
+$HTMLbeg = <<<HTMLbeg
 <!DOCTYPE html>
 <html>
-  <head>
 
+  <head>
+    
+    
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Kathy Rose Astrology</title>
@@ -187,6 +241,7 @@ $HTMLhead = <<<HTMLhead
 </head>
 
 
+
     <body id="page-top" class="index">
 
     <!-- Navigation -->
@@ -211,7 +266,9 @@ $HTMLhead = <<<HTMLhead
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
         
-               
+                    
+                    
+                    
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
@@ -246,6 +303,24 @@ $HTMLhead = <<<HTMLhead
             </div>
         </div>
     </header>
+<!--
+        
+          <a class="page-link" href="./articles/">Articles</a>
+        
+          <a class="page-link" href="./blog/">Blog</a>
+        
+          <a class="page-link" href="./charts/">Charts</a>
+        
+          
+        
+          
+        
+          
+        
+          <a class="page-link" href="./videos/">Forecast Videos</a>
+        
+ -->
+
 
     <!-- Services Section -->
     <section id="services" style="padding: 50px 0px 0px 0px;">
@@ -261,22 +336,52 @@ $HTMLhead = <<<HTMLhead
 For 35 years, I've had the privilege of working with many thousands of clients around the world to help them understand the guidance and the gifts revealed through their horoscopes. 
 In your 60-minute astrological consultation, we will explore the influences, tendencies, strengths and vulnerabilities suggested by your chart. In examining how the planetary placements and patterns are linked to your life purpose, we will discuss and determine strategies for opening opportunities and dealing with challenges as you seek personal fulfillment.<br/>
 Please <a href="mailto:roseastrology@yahoo.com?Subject=Schedule a Consultation">email</a> me at <a href="mailto:roseastrology@yahoo.com?Subject=Schedule a Consultation">roseastrology@yahoo.com</a> or call me at <b><span style="white-space: nowrap;">757-340-5516</span></b> to schedule your appointment.</p>
-                </div>
-               
-                <div class="col-md-4">
-                    <h4 class="service-heading">Monthly Videos</h4>
-                    <p class="text-muted">Every month, on my <a href="https://www.youtube.com/user/roseastrology" target="_blank">YouTube Channel</a>, you can watch new videos on the astrology forecast for that month. You can also see the energetic influences of the New Moon as it passes through the twelve signs of the Zodiac. Professionally produced and always free, these short videos are packed full of useful information and practical guidance to help you anticipate and integrate the important astrological patterns the month holds in store.</p>
-                    <p class="text-muted">Subscribe to my <a href="https://www.youtube.com/user/roseastrology" target="_blank">YouTube Channel</a><br /> by <a href="https://www.youtube.com/user/roseastrology" target="_blank">clicking here</a>.</p>
+                </div>   
+HTMLbeg;
+
+
+
+
+$HTMLmid = "";
+
+$HTMLmid .= "<a href='http://www.youtube.com/watch?v=" . $newMoonURL . "'target='new'><br />";
+$HTMLmid .= "<strong>New Moon in " . $newMoonSign . " " . $newMoonYear . "</strong></a><br />";
+$HTMLmid .= "Here's Kathy Rose with the background you need to put your needs into focus.</p>";
+$HTMLmid .= "<iframe width='374' height='250' src='http://www.youtube.com/embed/" . $newMoonURL;
+$HTMLmid .= "' frameborder='0' allowfullscreen></iframe>";
+$HTMLmid .= "<p>&nbsp;</p><br />";
+
+$HTMLmid .= "<p><strong><a href='http://www.youtube.com/watch?v=" . $insightURL . "' target='new'>";
+$HTMLmid .= "Astrological Insights for " . $insightMonth . " " . $insightYear . "</a></strong><br />";
+$HTMLmid .= "What life-enhancing practices does the astrology of " . $insightMonth . " support? Find out in the latest forecast from Kathy Rose.</p>";
+$HTMLmid .= "<iframe width='374' height='250' src='http://www.youtube.com/embed/" . $insightURL . "' frameborder='0' allowfullscreen></iframe>";
+$HTMLmid .= "<p>&nbsp;</p>";
+
+
+
+$HTMLmid = "                <div class='col-md-4'>
+                    <h4 class='service-heading'>Monthly Videos</h4>
+                    <p class='text-muted'>Every month, on my <a href='https://www.youtube.com/user/roseastrology' target='_blank'>YouTube Channel</a>, you can watch new videos on the astrology forecast for that month. You can also see the energetic influences of the New Moon as it passes through the twelve signs of the Zodiac. Professionally produced and always free, these short videos are packed full of useful information and practical guidance to help you anticipate and integrate the important astrological patterns the month holds in store.</p>
+                    <p class='text-muted'>Subscribe to my <a href='https://www.youtube.com/user/roseastrology' target='_blank'>YouTube Channel</a><br /> by <a href='https://www.youtube.com/user/roseastrology' target='_blank'>clicking here</a>.</p>
                    
                     
-                </div>
-                
-                 <div class="col-md-4">
+                </div>";
+
+
+
+
+$HTMLend1 = <<<HTMLend1
+                  <div class="col-md-4">
                     <h4 class="service-heading">Newsletter</h4>
                     <p style="font-weight: bold;">Sign up for my Free Newsletter.</p>
                    <div>
-
+ <!--                    <script type="text/javascript" src="//app.icontact.com/icp/core/mycontacts/signup/designer/form/automatic?id=41&cid=872462&lid=7947"></script>
+-->
                        <div>
+   
+<!--
+<script type="text/javascript" src="https://app.icontact.com/icp/static/form/javascripts/validation.js"></script>
+-->
 
                            
 <form id="ic_signupform" method="POST" action="https://app.icontact.com/icp/core/mycontacts/signup/designer/form/?id=41&amp;cid=872462&amp;lid=7947">
@@ -371,10 +476,6 @@ Please <a href="mailto:roseastrology@yahoo.com?Subject=Schedule a Consultation">
             </div>
         </div>
     </aside>
-HTMLhead;
-
-    
-$HTMLbeg = <<<HTMLbeg
     <!-- Services Section -->
     <section id="consultations" class="bg-light-gray">
         <div class="container">
@@ -416,28 +517,7 @@ Payment can be made by MasterCard or Visa, or by check (check must be received b
             </div>
         </div>
     </section>
-HTMLbeg;
-
-/*
-$HTMLmid = "";
-
-$HTMLmid .= "<a href='http://www.youtube.com/watch?v=" . $newMoonURL . "'target='new'><br />";
-$HTMLmid .= "<strong>New Moon in " . $newMoonSign . " " . $newMoonYear . "</strong></a><br />";
-$HTMLmid .= "Here's Kathy Rose with the background you need to put your needs into focus.</p>";
-$HTMLmid .= "<iframe width='374' height='250' src='http://www.youtube.com/embed/" . $newMoonURL;
-$HTMLmid .= "' frameborder='0' allowfullscreen></iframe>";
-$HTMLmid .= "<p>&nbsp;</p><br />";
-
-$HTMLmid .= "<p><strong><a href='http://www.youtube.com/watch?v=" . $insightURL . "' target='new'>";
-$HTMLmid .= "Astrological Insights for " . $insightMonth . " " . $insightYear . "</a></strong><br />";
-$HTMLmid .= "What life-enhancing practices does the astrology of " . $insightMonth . " support? Find out in the latest forecast from Kathy Rose.</p>";
-$HTMLmid .= "<iframe width='374' height='250' src='http://www.youtube.com/embed/" . $insightURL . "' frameborder='0' allowfullscreen></iframe>";
-$HTMLmid .= "<p>&nbsp;</p>";
-*/
-
-$HTMLmid = "";
-$HTMLmid .=
-    '<!-- Portfolio Grid Section -->
+    <!-- Portfolio Grid Section -->
     <section id="videos">
         <div class="container">
             <div class="row">
@@ -447,41 +527,86 @@ $HTMLmid .=
                 </div>
             </div>
             <div class="row">
-              <div style="display:flex; flex-wrap:wrap; justify-content:center;">        
+              <div style="display:flex; flex-wrap:wrap; justify-content:center;">
                 
-                <div class="col-md-4 col-sm-6 portfolio-item" style="width:374px; margin:15px">                  
+             
+                
+             
+                
+             
+                
+             
+                
+             
+                
+             
+                
+             
+                
+             
+                
+             
+                
+             
+                
+             
+                
+             
+                
+             
+                
+             
+                
+             
+                
+                
+                <div class="col-md-4 col-sm-6 portfolio-item" style="width:374px; margin:15px">
+                    
                        
-                        <iframe width="374" height="250" src="https://www.youtube.com/embed/8g4t9S9kTdQ" frameborder="0" allowfullscreen></iframe>
+                        <iframe width='374' height='250' src='https://www.youtube.com/embed/8g4t9S9kTdQ' frameborder='0' allowfullscreen></iframe>
                       
                     </a>
                     <div style="text-align: center;">
                         <h5>New Moon in Aries 2017</h4>
                         <p class="text-muted"></p>
                     </div>
-                </div>               
+                </div>
+                
+             
+                
                 
                 <div class="col-md-4 col-sm-6 portfolio-item" style="width:374px; margin:15px">
-                                          
-                        <iframe width="374" height="250" src="https://www.youtube.com/embed/3sbMQMQmnlw" frameborder="0" allowfullscreen></iframe>
+                    
+                       
+                        <iframe width='374' height='250' src='https://www.youtube.com/embed/3sbMQMQmnlw' frameborder='0' allowfullscreen></iframe>
                       
                     </a>
                     <div style="text-align: center;">
                         <h5>Astrological Insights for April 2017</h4>
                         <p class="text-muted"></p>
                     </div>
-                </div>         
+                </div>
+                
+             
+                
+             
+                
+             
+                
+             
+                
+             
+                
+            
             </div>
                 <br style="clear:left">
             <h5>&nbsp;</h5> <h4 class="service-heading">Check out my <a href="https://www.youtube.com/user/roseastrology" target="_blank">YouTube channel...</a></h4><div style="font-weight:bold; width:35%;margin:0px; padding:0px;"><h3 class="section-subheading text-muted" style="line-height:150%;margin-bottom:0;">to see other original videos, including my popular series on The Rings You Wear as well as two videos on Cleansing and Charging Your Aura.</h3></div>
             </div>           
-        </div>           
-    </section>';
+        </div>
+            
+    </section>
 
-
-
-
-$HTMLend1 = <<<HTMLend1
-   <!-- Services Section -->
+    <!-- Services Section -->
     <section id="articles" class="bg-light-gray">
         <div class="container">
             <div class="row">
@@ -493,7 +618,12 @@ $HTMLend1 = <<<HTMLend1
             <div class="row text-left">
                 <div class="col-md-12">   
                     <ul style="list-style-type: none;">
-     
+                       
+                
+
+    
+        
+        
             
                         <li>
                             <div class="timeline-image">
@@ -506,7 +636,13 @@ $HTMLend1 = <<<HTMLend1
                                 <p class="text-muted">What do you say to a woman who asks you to look at her horoscope to see if a pregnancy is in her future? Often stressed and anxious, she inquires emotionally, “Will I have a baby? And if so, when?”&nbsp;&nbsp; <b><a href="./article/2017/02/09/TheAstrologyOfPregnancy/">more...</a></b>
                 </p><br clear="all">
                             </div>
-                        </li> 
+                        </li>
+           
+    
+                    
+    
+        
+        
             
                         <li>
                             <div class="timeline-image">
@@ -520,7 +656,13 @@ $HTMLend1 = <<<HTMLend1
                 </p><br clear="all">
                             </div>
                         </li>
-             
+           
+    
+                    
+    
+        
+        
+            
                         <li>
                             <div class="timeline-image">
                                 <img class="img-responsive" style="float:left; height:100px; width:100px; margin:8px 15px 15px 15px;" src=./img/articles/Pisces2.jpg alt="">
@@ -532,7 +674,54 @@ $HTMLend1 = <<<HTMLend1
                                 <p class="text-muted">Have you ever become assertive and energized when talking about Mars transits? Or wild and adventurous when discussing Uranus? When you look at your own horoscope cycles or those of your clients, does your behavior begin to resonate with the planetary signature energies?&nbsp;&nbsp; <b><a href="./article/2017/02/07/NavigatingNeptune/">more...</a></b>
                 </p><br clear="all">
                             </div>
-                        </li>                   
+                        </li>
+           
+    
+                    
+    
+        
+        
+                    
+    
+        
+        
+                    
+    
+        
+        
+                    
+    
+        
+        
+                    
+    
+        
+        
+                    
+    
+                    
+    
+                    
+    
+                    
+    
+                    
+    
+                    
+    
+                    
+    
+                    
+    
+                    
+    
+                    
+    
+                    
+    
+                    
+    
+                    
     
                       </ul>  <br>     
                     
@@ -775,6 +964,7 @@ When I was 24, I started my practice as a full-time astrologer and intuitive. I 
 -->
         </div>
     </section>
+
 
       <footer>
         <div class="container">
@@ -1606,7 +1796,9 @@ When I was 24, I started my practice as a full-time astrologer and intuitive. I 
             </div>
         </div>
     </div>
-  
+
+
+    
 
 <!-- jQuery Version 1.11.0 -->
     <script src="/js/jquery-1.11.0.js"></script>
@@ -1626,8 +1818,11 @@ When I was 24, I started my practice as a full-time astrologer and intuitive. I 
     <!-- Custom Theme JavaScript -->
     <script src="/js/agency.js"></script>
 
+
 <!-- custom react file for YouTube component -->
 <script defer src="/js/bundle.js"></script>
+
+
 
 <script src="/js/icv_validation.js"></script>
 <script type="text/javascript" src="https://app.icontact.com/icp/static/form/javascripts/tracking.js"></script>
@@ -1858,8 +2053,7 @@ if( $_POST["submit"] == "Publish" )
 
 		if (!$file = fopen($filename, 'w')) { echo "Cannot open file ($filename)"; exit; }
 
-		if (fwrite($file, $HTMLhead) === FALSE) { echo "Cannot write to file ($filename)"; exit; }
-        if (fwrite($file, $HTMLbeg) === FALSE) { echo "Cannot write to file ($filename)"; exit; }
+		if (fwrite($file, $HTMLbeg) === FALSE) { echo "Cannot write to file ($filename)"; exit; }
 		if (fwrite($file, $HTMLmid) === FALSE) { echo "Cannot write to file ($filename)"; exit; }
 		if (fwrite($file, $HTMLend1) === FALSE) { echo "Cannot write to file ($filename)"; exit; }
 		fclose($file);
@@ -1885,9 +2079,10 @@ if( $_POST["submit"] == "Publish" )
 	}
 }
 
-echo $HTMLhead;
 echo $HTMLbeg;
 echo $HTMLmid;
 echo $HTMLend1;
+
+
 
 ?>

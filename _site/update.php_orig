@@ -153,71 +153,137 @@ YouTube:
 
 <?
 $HTMLbeg = <<<HTMLbeg
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<title>Kathy Rose Astrology</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta name="keywords" content="astology, astrological readings, astrological consultation" />
-    <meta name="description" content="Astrologer Kathy Rose can help you understand your strengths and weaknesses based on your astrological chart." />
-    <link rel="SHORTCUT ICON" href="http://www.roseastrology.com/images/favicon.ico" type="image/x-icon" />
-<link href="css/styles-roseastrology.css" rel="stylesheet" type="text/css" />
-<style type="text/css">
-.link,
-.link a,
-#SignUp .signupframe {
-	color: #330033;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10px;
-	width:120px;
-	}
-	.link,
+<!DOCTYPE html>
+<html>
 
-	.link a {
-		text-decoration: none;
-		}
-	#SignUp .signupframe {
-		border: 1px dotted #003300;
-	background-color: #CCCC99;
-		}
-#SignUp .signupframe .required {
-	font-size: 10px;
-	}
-</style>
+  <head>
+    
+    
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kathy Rose Astrology</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+    <link rel="canonical" href="https://y7kim.github.io/">
 
-    <script type="text/javascript">
-<!--
-function MM_openBrWindow(theURL,winName,features) { //v2.0
-  window.open(theURL,winName,features);
-}
-//-->
-    </script>
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body>
-	<!--main container-->
-	<div id="main">
-		<!--header-->
-		<div id="header">
-			<h1 class="logo"><a href="#">KathyRoseAstrology</a></h1>
-			<div class="stars">&nbsp;</div>
-		</div>
-    <!--container-->
-		<div id="container">
-			<!--left column-->
-			<div id="leftcolumn">
-				<h2>ARTWORK</h2>
-			  <p>I invite you to view my original <a href="http://www.kathyroseart.com" target="_blank">mandala and abstract artwork</a>.</p>
-			  <p>I have enjoyed a successful astrology practice for over 20 years. I offer astrology sessions in person or long-distance by phone. </p>
-		      <p>If you'd like to understand more about my philosophy, please read the article<br><a href="article-consult.html">Why, When and How to Consult an Astrologer.</a></p>
-		      <p>&nbsp; </p>
-		  </div>
-	    <!--content-->
-			<div id="content">
-				<p class="largegreen">The patterns of the planets at the moment of birth have an extraordinary correlation with the patterns in life development.</p>
-			  <p>An astrological consultation can help you form a plan that can help you with your journey of evolution and growth, and maximize your success. </p>
 
-			  <div class="box">
-              <p><span class="subtitle"><strong>SEE KATHY'S VIDEOS</strong></span><br />
+
+
+    <body id="page-top" class="index">
+
+    <!-- Navigation -->
+
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+         
+       <a class="navbar-brand page-scroll" href="/">Kathy Rose Astrology</a>
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+        
+                    
+                    
+                    
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/#consultations">Consultations</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/#videos">Monthy Videos</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/#articles">Articles</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/#about">My Story</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/#contact">contact</a>
+                    </li>
+                
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header class="menu-displace" >
+        <div class="container">
+            <div class="intro-text" style="padding:0 0 30vw 0">
+                <a href="#services" id='tellMeMore' class="page-scroll btn btn-xl">Tell Me More</a>
+            </div>
+        </div>
+    </header>
+<!--
+        
+          <a class="page-link" href="./articles/">Articles</a>
+        
+          <a class="page-link" href="./blog/">Blog</a>
+        
+          <a class="page-link" href="./charts/">Charts</a>
+        
+          
+        
+          
+        
+          
+        
+          <a class="page-link" href="./videos/">Forecast Videos</a>
+        
+ -->
+
+
+    <!-- Services Section -->
+    <section id="services" style="padding: 50px 0px 0px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h4 class="service-heading">Consultations</h4>
+                    <p class="text-muted"><b>Intuitive Insight for Conscious Growth<br/>and Personal Development.</b><br/>
+For 35 years, I've had the privilege of working with many thousands of clients around the world to help them understand the guidance and the gifts revealed through their horoscopes. 
+In your 60-minute astrological consultation, we will explore the influences, tendencies, strengths and vulnerabilities suggested by your chart. In examining how the planetary placements and patterns are linked to your life purpose, we will discuss and determine strategies for opening opportunities and dealing with challenges as you seek personal fulfillment.<br/>
+Please <a href="mailto:roseastrology@yahoo.com?Subject=Schedule a Consultation">email</a> me at <a href="mailto:roseastrology@yahoo.com?Subject=Schedule a Consultation">roseastrology@yahoo.com</a> or call me at <b><span style="white-space: nowrap;">757-340-5516</span></b> to schedule your appointment.</p>
+                </div>   
 HTMLbeg;
 
 
@@ -249,78 +315,7 @@ $HTMLmid .= "<p>&nbsp;</p><br />";
 
 
 $HTMLend1 = <<<HTMLend1
-              <p><strong>The Profound Power of Affirmations - Part 1</strong><br />
-                <span class="smaller">Affirmations work! And they can work for you - right now - at this very moment!! You can direct your thoughts and focus your energies to change your life. For more than 30 years, Kathy Rose has been teaching spiritual empowerment - sharing powerful procedures and transformational techniques to put your life on a more positive path. Now, Kathy invites you to enjoy Part One of her new video series - &quot;The Profound Power of Affirmations&quot;, and start to take more confident control of your life's journey. <a href="http://youtu.be/diY9nkRcXE0" target="_blank">Watch video.</a></span></p>
-<p> <strong>Aura Cleansing</strong><br />
-			      <span class="smaller">Are you bombarded by emotional debris and psychic pollution? Knowing how to cleanse and charge your aura is one of the more important spiritual skills! For years, clients have asked me to record the aura-cleansing meditation - finally, here it is, in a wonderful video produced by my husband.<br />
-		          <a href="http://www.youtube.com/user/roseastrology#p/a/u/1/qjJA9I3jsgk" target="_blank">Aura Meditation Part One - Introduction</a><br />
-	            <a href="http://www.youtube.com/user/roseastrology#p/a/u/2/UhjizNhJKpE" target="_blank">Aura Meditation Part Two - Experience</a></span></p>
-</div>
-
-
-              <p><strong class="subtitle">Recent article published in the <br />
-              <em>Mountain Astrologer Magazine (Oct/Nov 2011)</em></strong><br />
-                &quot;<a href="articles/Aries Point Bloom.pdf" target="_blank">The Aries Point Bloom</a>&quot;<br />
-
-			    <span class="smaller">There is an extremely sensitive and powerful zone in the zodiac located at the 0 degrees point of the four cardinal signs - a special area that relates to high public
-visibility. Actually, we could say that the Aries Point has an orb that starts at 29 degrees mutable and ends at 1 degree cardinal. Planets or angles at the Aries Point in our natal chart have the potential for high visibility in life. Sometimes this can suggest fame or notoriety. The AP indicates the presence of energy insistence that pushes a planet or angle into public view. <a href="articles/Aries Point Bloom.pdf" target="_blank">Read full essay...</a></span></p>
-              <p><a href="articles.html">Read past articles...</a></p>
-
-			  <a id="signup">&nbsp;</a>
-			  <p><span class="subtitle"><strong>Please sign up for my monthly e-Newsletter</strong></span><br />
-
-			   <span class="smaller"><em>(your contact info stays completely private and confidential)</em></span>. <br />No more time-delayed paper mailings; I'm going green as I bring you the latest in astrological developments.<br />
-			   <span class="subtitle"><strong>Save time. Save trees. Stay current.</strong></span> <br /></p>
-              <script type="text/javascript" src="http://app.icontact.com/icp/loadsignup.php/form.js?c=872462&l=7947&f=2046"></script>
-<p class="smaller"><a href="http://www.icontact.com">Email Marketing</a> You Can Trust</p>
-            <p>&nbsp;</p>
-		  </div>
-			<!--rightcolumn-->
-			<div id="rightcolumn">
-				<div class="current-moon">
-					<!-- // Begin Current Moon Phase HTML (c) CalculatorCat.com // --><div style="width:141px"><div style="padding:2px;background-color:#000000;border: 1px solid #000000"><div style="padding:15px;padding-bottom:5px;padding-top:11.3px;border: 1px solid #000000" align="center"><div style="padding-bottom:5.6px;color:#FFFFFF;font-family:arial,helvetica,sans-serif;font-size:11.3px;">CURRENT MOON</div><script language="JavaScript" type="text/javascript">var ccm_cfg = { pth:'http://www.moonmodule.com/cs/', fn:'ccm_v1.swf', lg:'en', hs:1, tc:'CCCC99', bg:'000000', mc:'', fw:103, fh:151.8, js:0, msp:0 }</script><script language="JavaScript" type="text/javascript" src="http://www.moonmodule.com/cs/ccm_fl.js"></script><div style="padding-top:5px" align="center"><a href="http://www.calculatorcat.com/moon_phases/moon_phases.phtml" target="cc_moon_ph" style="font-size:10px;font-family:arial,verdana,sans-serif;color:#888888;text-decoration:underline;border:none;"><span style="color:#888888">moon phases</span></a></div></div></div></div><!-- // end moon phase HTML // -->
-       </div>
-       <p>&nbsp;</p>
-
-		  <ul class="nav">
-					<li><a href="aboutkathy.html">About Kathy</a></li>
-					<li><a href="consultations.html">Consultations</a></li>
-                    <li><a href="articles.html">Articles</a></li>
-					<li><a href="http://www.kathyroseart.com">Artwork</a></li>
-
-					<li><a href="schedule.html">Schedule</a></li>
-					<li><a href="resources.html">Resources</a></li>
-			  </ul>
-
-				<h2>LET'S TALK</h2>
-				<p>To schedule a consultation please e-mail me at <a href="mailto:roseastrology@yahoo.com?Subject=Schedule a Consultation">roseastrology@yahoo.com</a> or call <br />
-			    757-340-5516. <br />
-			    <em>All phone sessions are recorded.</em></p>
-				<p>&nbsp;</p>
-				<!--
-				<p><a href="http://www.activateyourintuition.com" target="_blank"><img src="http://www.roseastrology.com/activateyourintuition.com/images/dvd-set.png" alt="Activate Your Intuition DVD Set" width="136" height="127" /></a></p>
-                <h2>Activate Your Intuition</h2>
-			  <p><em>My exciting new DVD series to help you awaken your natural psychic ability is now available! <a href="http://www.activateyourintuition.com" target="_blank">Preview and order online.</a></em></p>
-			  <p>&nbsp;</p>
-				<h2><a href="http://www.activateyourintuition.com" target="_blank"><img src="http://www.roseastrology.com/activateyourintuition.com/images/calendar2.png" alt="Mandala Calendar" width="136" height="127" /></a>Mandala Coloring Calendar </h2>
-				<p><em>It's amazing how coloring a Mandala can help you unwind, connect with calming energy, renew your sense of purpose and feel genuine peace. <a href="http://www.activateyourintuition.com" target="_blank">Order online.</a></em><br />
-		      </p>-->
-		      <span style="display: block; height: 1px; border: 0; border-top: 1px solid #333; margin:1em 0; padding:0;">&nbsp;</span>
-
-		      <p><h2>Newsletter</h2><h2><a href="http://www.roseastrology.com#signup">Sign up</a></h2>
-		      <p>Sign up for my monthly e-Newsletter.<br />
-			  <span class="subtitle"><strong><em>Save time. <br />Save trees. <br />Stay current. </em></strong></span>
-			  <span class="smaller"><em><br />Your info stays completely private & confidential.</em></span>
-			  </p>
-
-          </div>
-	  </div>
-		<!--footer-->
-		<p id="footer">Copyright &copy; 2012 Kathy Rose Astrology. All rights reserved.<br/>Privacy Policy: All information is kept private and never shared.<br />
-		<a href="http://www.redchalkstudios.com" target="_blank">Branding & Website design by Red Chalk Studios, Inc.</a></p>
-	</div>
-</body>
-</html>
+ 
 HTMLend1;
 
 if( $_POST["submit"] == "Publish" )
