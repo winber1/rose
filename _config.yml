@@ -1,4 +1,4 @@
-url: https://y7kim.github.io
+url: http://roseastrology.com/
 
 # works for dev (http://127.0.0.1:4000/rose/)
 #baseurl: /rose  
@@ -8,8 +8,8 @@ baseurl: "."
 
 # Site settings
 title: Kathy Rose Astrology
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+email: roseastrology@yahoo.com
+description: "In a private consultation with Kathy Rose, you'll discover the gifts and the guidance revealed through your personal horoscope."
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
@@ -63,8 +63,8 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: 
+  - line: 
 
 # Build settings
 markdown: kramdown

@@ -9,8 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Kathy Rose Astrology</title>
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
-    <link rel="canonical" href="https://y7kim.github.io/">
+    <meta name="description" content="In a private consultation with Kathy Rose, you'll discover the gifts and the guidance revealed through your personal horoscope.">
+    <link rel="canonical" href="http://roseastrology.com//">
 
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
@@ -71,7 +71,7 @@
                         <a class="page-scroll" href="/#videos">Monthy Videos</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/#articles">Published Articles</a>
+                        <a class="page-scroll" href="/#articles">Articles</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="/#about">My Story</a>
@@ -88,9 +88,9 @@
     </nav>
 
     <!-- Header -->
-    <header>
+    <header class="menu-displace" >
         <div class="container">
-            <div class="intro-text">
+            <div class="intro-text" style="padding:0 0 30vw 0">
                 <a href="#services" id='tellMeMore' class="page-scroll btn btn-xl">Tell Me More</a>
             </div>
         </div>
@@ -330,11 +330,11 @@ Payment can be made by MasterCard or Visa, or by check (check must be received b
                 <div class="col-md-4 col-sm-6 portfolio-item" style="width:374px; margin:15px">
                     
                        
-                        <iframe width='374' height='250' src='https://www.youtube.com/embed/8g4t9S9kTdQ' frameborder='0' allowfullscreen></iframe>
+                        <iframe width='374' height='250' src='https://www.youtube.com/embed/lYK_OO1HEbM' frameborder='0' allowfullscreen></iframe>
                       
                     </a>
                     <div style="text-align: center;">
-                        <h5>New Moon in Aries 2017</h4>
+                        <h5>New Moon in Taurus 2017</h4>
                         <p class="text-muted"></p>
                     </div>
                 </div>
@@ -345,11 +345,11 @@ Payment can be made by MasterCard or Visa, or by check (check must be received b
                 <div class="col-md-4 col-sm-6 portfolio-item" style="width:374px; margin:15px">
                     
                        
-                        <iframe width='374' height='250' src='https://www.youtube.com/embed/3sbMQMQmnlw' frameborder='0' allowfullscreen></iframe>
+                        <iframe width='374' height='250' src='https://www.youtube.com/embed/s5BABvmQHwc' frameborder='0' allowfullscreen></iframe>
                       
                     </a>
                     <div style="text-align: center;">
-                        <h5>Astrological Insights for April 2017</h4>
+                        <h5>Astrological Insights for May 2017</h4>
                         <p class="text-muted"></p>
                     </div>
                 </div>
@@ -1310,7 +1310,7 @@ When I was 24, I started my practice as a full-time astrologer and intuitive. I 
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>New Moon in Aries 2017</h2>
+                            <h2>New Moon in Taurus 2017</h2>
                             <hr class="star-primary">
                             <img src="img/portfolio/treehouse.png" class="img-responsive img-centered" alt="image-alt">
                             <p>Here's Kathy Rose with the background you need to put your needs into focus.</p>
@@ -1348,7 +1348,7 @@ When I was 24, I started my practice as a full-time astrologer and intuitive. I 
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Astrological Insights for April 2017</h2>
+                            <h2>Astrological Insights for May 2017</h2>
                             <hr class="star-primary">
                             <img src="img/portfolio/treehouse.png" class="img-responsive img-centered" alt="image-alt">
                             <p>Here's Kathy Rose with the background you need to put your needs into focus.</p>
